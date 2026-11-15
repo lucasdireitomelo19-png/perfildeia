@@ -1,0 +1,208 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"SG";font-weight:500;src:url(space-grotesk-latin-500-normal.woff2)}
+@font-face{font-family:"SG";font-weight:700;src:url(space-grotesk-latin-700-normal.woff2)}
+@font-face{font-family:"In";font-weight:400;src:url(inter-latin-400-normal.woff2)}
+@font-face{font-family:"In";font-weight:500;src:url(inter-latin-500-normal.woff2)}
+@font-face{font-family:"In";font-weight:700;src:url(inter-latin-700-normal.woff2)}
+@font-face{font-family:"JB";font-weight:500;src:url(jetbrains-mono-latin-500-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F6F2}
+#stage{position:absolute;inset:0;background:#F7F6F2;color:#14161A;font-family:"In"}
+.mt{background:linear-gradient(transparent 55%,#D4F542 55%,#D4F542 92%,transparent 92%);padding:0 .06em}
+.pq::after{content:"";display:inline-block;width:.14em;height:.14em;background:#2F3BFF;margin-left:.05em}
+#win{position:absolute;left:60px;top:470px;width:960px;height:980px;background:#fff;border-radius:28px;overflow:hidden;
+ box-shadow:0 30px 80px rgba(20,22,26,.10),0 4px 14px rgba(20,22,26,.06)}
+#bar{height:70px;border-bottom:1px solid #ECECEC;display:flex;align-items:center;gap:14px;padding-left:28px}
+#bar i{width:18px;height:18px;border-radius:50%;background:#C9CDD3;display:block}
+#bar span{margin-left:22px;font:500 22px "In";color:#6B7079}
+#view{position:absolute;left:0;top:70px;width:960px;height:910px;overflow:hidden}
+#shot{position:absolute;left:0;top:0;transform-origin:0 0}
+#cursor{position:absolute;width:44px;height:44px;display:none;z-index:5}
+#ring{position:absolute;width:90px;height:90px;border-radius:50%;border:6px solid #2F3BFF;display:none;z-index:4}
+#top{position:absolute;left:60px;right:60px;top:250px;height:200px;display:flex;align-items:center;justify-content:center;text-align:center}
+#top .t{font:700 84px/1.02 "SG";letter-spacing:-.03em}
+#big{position:absolute;left:0;right:0;top:110px;display:none;text-align:center;z-index:6}
+#big div{font:700 170px/1 "SG";letter-spacing:-.045em}
+#hl{position:absolute;border:7px solid #2F3BFF;border-radius:18px;display:none;z-index:4}
+#cap{position:absolute;left:70px;right:70px;top:1490px;height:150px;display:flex;align-items:center;justify-content:center;text-align:center;font:700 60px/1.15 "In";letter-spacing:-.01em}
+#cap b{color:#2F3BFF}
+#mono{position:absolute;left:90px;right:90px;top:1300px;display:none;z-index:6;text-align:center}
+#mono div{display:inline-block;font:500 46px "JB";background:#EEF0F5;border:3px solid #2F3BFF;border-radius:20px;padding:22px 30px}
+/* chat */
+#chat{position:absolute;left:0;top:0;width:960px;display:none;padding:34px 40px 400px;background:#fff}
+.who{font:700 24px "In";color:#6B7079;margin:0 0 12px}
+.user{margin-left:110px;background:#EEF0F5;border-radius:26px 26px 6px 26px;padding:26px 30px}
+.pasted{font:500 22px/1.45 "JB";color:#3a3d44;max-height:230px;overflow:hidden;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+.chip{display:inline-block;font:600 20px "In";color:#2F3BFF;background:#fff;border:2px solid #2F3BFF;border-radius:999px;padding:6px 16px;margin-bottom:14px}
+.typed{font:500 30px/1.4 "In";margin-top:16px;white-space:pre-wrap}
+.typed .hl{background:#D4F542;font-family:"JB";font-size:28px}
+.ai{margin-top:34px;margin-right:60px}
+.aib{font:400 29px/1.45 "In";white-space:pre-wrap}
+.aib strong{font-weight:700}
+.caret{display:inline-block;width:3px;height:1em;background:#2F3BFF;vertical-align:-0.12em;margin-left:2px}
+/* full screens */
+.full{position:absolute;inset:0;background:#F7F6F2;display:none;z-index:20}
+#cta{flex-direction:column;align-items:center;justify-content:center;text-align:center}
+#cta .a{font:500 92px "SG";letter-spacing:-.02em}
+#cta .b{font:700 230px/1 "SG";color:#2F3BFF;letter-spacing:-.04em;margin:30px 0 50px}
+#cta .c{font:500 48px/1.35 "In"}
+#cta .d{font:400 34px "In";color:#6B7079;margin-top:220px}
+#logo{align-items:center;justify-content:center}
+#logo img{width:760px}
+#vin{background:#2F3BFF;align-items:center;justify-content:center}
+#vin img{width:1080px;height:1080px}
+#vin i{position:absolute;background:#2F3BFF;display:block}
+</style></head><body>
+<div id="stage">
+ <div id="top"><div class="t" id="toptxt"></div></div>
+ <div id="win"><div id="bar"><i></i><i></i><i></i><span id="url"></span></div>
+  <div id="view"><img id="shot"><div id="chat">
+   <div class="who">Você</div>
+   <div class="user"><div class="chip">Prompt colado do prompts.chat</div><div class="pasted" id="pasted"></div><div class="typed" id="typed"></div></div>
+   <div class="ai" id="aiwrap"><div class="who">IA</div><div class="aib" id="aib"></div></div>
+  </div>
+  <svg id="cursor" viewBox="0 0 24 24"><path d="M3 2l7.5 19 2.6-7.6L21 11z" fill="#14161A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+  <div id="ring"></div><div id="hl"></div></div></div>
+ <div id="big"><div>+170 mil</div><div><span class="mt">estrelas</span></div></div>
+ <div id="mono"><div>Responda em português do Brasil.</div></div>
+ <div id="cap"></div>
+ <div class="full" id="cta"><div class="a">Comenta</div><div class="b">PROMPT</div><div class="c">que eu te mando o link e o truque<br>pra usar em português</div><div class="d">Fonte: prompts.chat</div></div>
+ <div class="full" id="logo"><img src="iaworks-principal.png"></div>
+ <div class="full" id="vin"><img src="iaworks-icone-perfil.png"><i id="dot"></i></div>
+</div>
+<script>
+let TL=null, PROMPT="";
+const $=id=>document.getElementById(id);
+const ease=x=>x<0?0:x>1?1:x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const lerp=(a,b,x)=>a+(b-a)*x;
+const IMG={};
+async function init(){
+ TL=await (await fetch('timeline.json')).json();
+ PROMPT=await (await fetch('cap/prompt_text.txt')).text();
+ $('pasted').textContent=PROMPT;
+ const names=['gh_top','gh_readme','pc_list_top','pc_list_s1','pc_list_s2','pc_list_s3','pc_home','pc_search_res','pc_prompt'];
+ for(let i=1;i<=14;i++) names.push('pc_search_'+String(i).padStart(2,'0'));
+ await Promise.all(names.map(n=>new Promise(r=>{const im=new Image();im.onload=r;im.src='cap/'+n+'.png';IMG[n]=im;})));
+ await document.fonts.ready;
+ window.READY=true;
+}
+const W=960,H=910,MAXY=1150;
+function cam(name,z,fx,fy){
+ const im=$('shot'); if(im.dataset.n!==name){im.src=IMG[name].src;im.dataset.n=name;}
+ const s=0.75*z; im.style.width=(1280*s)+'px';
+ let tx=W/2-fx*s, ty=H/2-fy*s;
+ tx=Math.min(0,Math.max(W-1280*s,tx)); ty=Math.min(0,Math.max(H-MAXY*s,ty));
+ im.style.transform=`translate(${tx}px,${ty}px)`; im.style.display='block';
+ return (x,y)=>[x*s+tx,y*s+ty];
+}
+function camK(name,k,u){ // keyframes [{t,z,x,y}]
+ let a=k[0],b=k[k.length-1];
+ for(let i=0;i<k.length-1;i++){ if(u>=k[i].t&&u<=k[i+1].t){a=k[i];b=k[i+1];break;} }
+ if(u<k[0].t){a=b=k[0]} if(u>k[k.length-1].t){a=b=k[k.length-1]}
+ const x=a===b?0:ease((u-a.t)/(b.t-a.t));
+ return cam(name,lerp(a.z,b.z,x),lerp(a.x,b.x,x),lerp(a.y,b.y,x));
+}
+function cursor(p,x,y,click){ // p: mapper; click: 0..1 progress of pulse or -1
+ if(!p){$('cursor').style.display='none';$('ring').style.display='none';return}
+ const [cx,cy]=p(x,y); const c=$('cursor'); c.style.display='block'; c.style.left=(cx-6)+'px'; c.style.top=(cy-4)+'px';
+ const r=$('ring'); if(click>=0&&click<=1){r.style.display='block';const sc=0.4+click*0.9;r.style.left=(cx-45)+'px';r.style.top=(cy-45)+'px';r.style.transform=`scale(${sc})`;r.style.opacity=1-click;} else r.style.display='none';
+}
+function setTop(html){ $('toptxt').innerHTML=html; }
+function seg(t){ for(let i=TL.segs.length-1;i>=0;i--){ if(t>=TL.segs[i].start-0.15) return [TL.segs[i], t-TL.segs[i].start]; } return [TL.segs[0], t-TL.segs[0].start]; }
+const TYPED="Meu negócio: Confeitaria Ponto Doce. O brigadeiro gourmet vai de R$ 12,00 pra R$ 13,50 (chocolate e açúcar subiram 18%). Pula pro passo 5 e escreve o e-mail pros clientes.\n";
+const HL="Responda em português do Brasil.";
+const ANSWER=`<strong>Assunto: Um recado carinhoso sobre nossos preços</strong>
+
+Olá, [nome]!
+
+Você faz parte da história da Ponto Doce, então queremos contar em primeira mão: a partir de 1º de fevereiro, o brigadeiro gourmet passa de R$ 12,00 para R$ 13,50.
+
+O motivo é simples: o chocolate e o açúcar que usamos ficaram 18% mais caros, e a gente não quer trocar a qualidade dos ingredientes.
+
+O que não muda: a receita, o capricho e o atendimento de sempre. E as encomendas feitas até 31 de janeiro continuam no preço antigo.
+
+Obrigado por estar com a gente!
+Equipe Ponto Doce`;
+function render(t){
+ for(const id of ['cta','logo','vin']) $(id).style.display='none';
+ $('big').style.display='none'; $('hl').style.display='none'; $('mono').style.display='none'; $('chat').style.display='none'; $('shot').style.display='none';
+ cursor(null);
+ const [S,u]=seg(t); const i=S.i;
+ // captions
+ let html='';
+ for(let c=0;c<S.chunks.length;c++){ const ch=S.chunks[c]; const st=ch[0].s-0.05; const nx=c+1<S.chunks.length?S.chunks[c+1][0].s-0.05:S.start+S.dur+0.15;
+   if(t>=st&&t<nx){ html=ch.map(w=>w.k?`<b>${w.w}</b>`:w.w).join(' '); } }
+ $('cap').innerHTML=(i>=7||!html)?'':'<div>'+html+'</div>';
+ $('url').textContent='';
+ if(i===1){
+  if(u<4.6){ $('url').textContent='github.com/f/prompts.chat';
+   const p=camK('gh_top',[{t:-1,z:3.4,x:1195,y:202},{t:1.9,z:3.6,x:1195,y:202},{t:2.6,z:1.35,x:640,y:200},{t:4.6,z:1.4,x:640,y:200}],u);
+   const a=p(1140,186),b=p(1250,217); const h=$('hl'); h.style.display='block'; h.style.left=(a[0]-10)+'px'; h.style.top=(a[1]-10)+'px'; h.style.width=(b[0]-a[0]+20)+'px'; h.style.height=(b[1]-a[1]+20)+'px';
+   if(u<2.3){$('big').style.display='block'; setTop('');}
+   else setTop('<span class="mt">+170 mil</span> estrelas');
+  } else { $('url').textContent='github.com/f/prompts.chat';
+   camK('gh_readme',[{t:4.6,z:1.25,x:500,y:400},{t:7.4,z:1.25,x:500,y:650}],u);
+   setTop('Prompt pronto pra <span class="mt">qualquer coisa</span>'); }
+ } else if(i===2){ $('url').textContent='prompts.chat/prompts';
+  const shots=['pc_list_top','pc_list_s1','pc_list_s2','pc_list_s3'];
+  if(u<1.9){ const n=shots[Math.max(0,Math.min(3,Math.floor(u/0.47)))]; camK(n,[{t:0,z:1.15,x:900,y:600}],u); }
+  else camK('pc_list_top',[{t:1.9,z:1.3,x:200,y:110},{t:2.3,z:3.2,x:150,y:92},{t:3.6,z:3.4,x:150,y:92}],u);
+  setTop('Quase 3 mil prompts · <span class="mt">grátis</span>');
+ } else if(i===3){
+  if(u<1.6){ $('url').textContent='prompts.chat';
+   const p=camK('pc_home',[{t:-.2,z:1.3,x:400,y:450},{t:0.7,z:2.1,x:200,y:529}],u);
+   cursor(p,lerp(330,130,ease(Math.min(1,u/0.9))),lerp(640,532,ease(Math.min(1,u/0.9))),u>1.0?(u-1.0)/0.45:-1);
+   setTop('1. Abre <span class="mt">prompts.chat</span>');
+  } else if(u<3.3){ $('url').textContent='prompts.chat/prompts';
+   const n=Math.max(1,Math.min(14,Math.ceil((u-1.6)/1.5*14)));
+   camK('pc_search_'+String(n).padStart(2,'0'),[{t:1.6,z:2.4,x:240,y:300}],u);
+   setTop('Busca: <span class="mt">price increase</span>');
+  } else if(u<4.3){ $('url').textContent='prompts.chat/prompts';
+   const p=camK('pc_search_res',[{t:3.3,z:1.5,x:450,y:300},{t:3.8,z:1.9,x:420,y:260}],u);
+   cursor(p,400,236,u>3.75?(u-3.75)/0.45:-1);
+   setTop('Aumento de preço <span class="mt">sem perder cliente</span>');
+  } else { $('url').textContent='prompts.chat/prompts/…price-increase-advisor';
+   camK('pc_prompt',[{t:4.3,z:1.25,x:640,y:200},{t:6.2,z:1.4,x:640,y:180}],u);
+   setTop('Aumento de preço <span class="mt">sem perder cliente</span>'); }
+ } else if(i===4){
+  if(u<1.6){ $('url').textContent='prompts.chat/prompts/…price-increase-advisor';
+   const p=camK('pc_prompt',[{t:-.2,z:1.4,x:800,y:350},{t:0.6,z:2.6,x:930,y:430}],u);
+   cursor(p,lerp(860,955,ease(Math.min(1,u/0.7))),lerp(560,431,ease(Math.min(1,u/0.7))),u>0.85?(u-0.85)/0.45:-1);
+  } else { $('url').textContent='Sua IA: ChatGPT, Claude ou Gemini'; chat(u-1.6,0,0); }
+  setTop('2. Copia e cola <span class="mt">na sua IA</span>');
+ } else if(i===5){ $('url').textContent='Sua IA: ChatGPT, Claude ou Gemini';
+  const tt=Math.max(0,Math.min(1,(u-1.4)/2.6)), th=Math.max(0,Math.min(1,(u-4.2)/1.9));
+  chat(9,tt,th);
+  if(u<4.1) setTop('3. Conta os dados <span class="mt">do seu negócio</span>');
+  else { setTop('E escreve no fim:'); $('mono').style.display='block'; }
+ } else if(i===6){ $('url').textContent='Sua IA: ChatGPT, Claude ou Gemini';
+  chat(9,1,1, Math.min(1,(u+0.15)/1.9));
+  setTop('<span class="pq">Pronto</span>');
+ } else if(i===7){ const c=$('cta'); c.style.display='flex'; const sc=u<0.2?lerp(0.9,1,u/0.2):1+0.04*(u/4.4); c.querySelector('.b').style.transform=`scale(${sc})`;
+ } else if(i===8){
+  if(t<TL.total-0.7){ const l=$('logo'); l.style.display='flex'; l.querySelector('img').style.opacity=Math.min(1,(u+0.15)/0.3); }
+  else { const v=$('vin'); v.style.display='flex'; const w=t-(TL.total-0.7); const d=$('dot');
+   d.style.left=709+'px'; d.style.top=(420+641)+'px';
+   const k=w<0.3?1:Math.max(0,1-(w-0.3)/0.1); d.style.width=(49*k+2)+'px'; d.style.height=(49*k+2)+'px'; d.style.left=(709+ (49-49*k)/2 -1)+'px'; d.style.top=(420+641+(49-49*k)/2-1)+'px';
+   d.style.display=k>0.02?'block':'none'; }
+ }
+}
+function chat(u0,tt,th,ta){
+ const ch=$('chat'); ch.style.display='block';
+ const pasted=u0>0.15; ch.querySelector('.user').style.visibility=pasted?'visible':'hidden'; ch.querySelectorAll('.who')[0].style.visibility=pasted?'visible':'hidden';
+ const n=Math.floor(TYPED.length*(tt||0)), m=Math.floor(HL.length*(th||0));
+ let s=TYPED.slice(0,n).replace(/&/g,'&amp;'); if(m>0) s+=`<span class="hl">${HL.slice(0,m)}</span>`;
+ if((tt>0&&tt<1)||(th>0&&th<1)) s+='<span class="caret"></span>';
+ $('typed').innerHTML=s;
+ const aw=$('aiwrap'); if(ta>0){ aw.style.display='block'; const L=ANSWER.length; const k=Math.floor(L*ta); let part=ANSWER.slice(0,k); if((part.match(/<strong>/g)||[]).length>(part.match(/<\/strong>/g)||[]).length) part+='</strong>';
+   $('aib').innerHTML=part.replace(/<strong>[^<]*$/,'<strong>')+(ta<1?'<span class="caret"></span>':''); } else aw.style.display='none';
+ // scroll chat so the newest content is visible
+ const h=ch.scrollHeight-400; let off=0;
+ if(ta>0){ off=Math.max(0, aw.offsetTop+aw.offsetHeight-860); }
+ else { off=Math.max(0, ch.querySelector('.user').offsetTop+ch.querySelector('.user').offsetHeight-820); }
+ ch.style.transform=`translateY(${-Math.max(0,off)}px)`;
+}
+init();
+</script></body></html>
