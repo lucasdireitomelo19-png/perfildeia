@@ -7,14 +7,35 @@ pautas: [P004, P005, P006, P007, P008, P009, P010, P011, P012]
 # Pesquisa: o formato viral "esse repositório do GitHub vai te ajudar a fazer X"
 
 ## Resumo em 3 linhas
-O formato "repositório do GitHub" funciona por três motivos: parece um segredo, é grátis e é a alternativa a um app pago. O problema é que a maioria dos repositórios mostrados nesses vídeos exige terminal, Python ou Docker, coisa que a Camila nunca vai conseguir usar. Nosso diferencial: **só mostramos repositório que tem instalador de 1 clique** (aba *Releases*), com o resultado funcionando na tela, e ensinamos a checar se o repositório é confiável.
+O formato viral é literal: "Esse repositório do GitHub com mais de X mil estrelas faz tal coisa!". O número de estrelas é a prova social do gancho. O problema é que a maioria dos repositórios mostrados nesses vídeos exige terminal, Python ou Docker, coisa que a Camila nunca vai conseguir usar. Nosso diferencial: **só mostramos repositório que tem instalador de 1 clique** (aba *Releases*), com o resultado funcionando na tela, e ensinamos a checar se o repositório é confiável.
 
-## Leitura do formato (para o roteirista)
-- **Por que viraliza:** gatilho de segredo ("ninguém tá falando"), de economia ("grátis, substitui o app de R$ 50/mês") e de lista (salvamento). Encaixa no pilar *Descoberta* e no gancho nº 3 ("Essa IA é grátis e quase ninguém conhece").
-- **O que os concorrentes erram:** mostram a página do GitHub e não o programa funcionando; recomendam repositórios para desenvolvedores (ex.: geradores de vídeo como MoneyPrinterTurbo e OpenReels são instalados por linha de comando, ver [gittrend.io](https://gittrend.io/trending/ai-video-generation) e [OpenReels](https://github.com/tsensei/OpenReels), acessados em 2026-11-15); não falam de segurança.
-- **Nossa regra para esse formato (proposta):** o repositório precisa ter (1) instalador `.exe`/`.dmg` nos *Releases*, (2) uso sem conta nem terminal, (3) resultado visual em até 10 s de vídeo.
-- **Limite desta pesquisa:** não encontrei dado público que meça a viralização desse formato no Brasil (busca feita em 2026-11-15). A leitura acima é qualitativa, com base no que aparece nas buscas e nas listas de tendência do GitHub. Vale validar com os números dos nossos próprios posts.
-- **Estrelas são um bom gancho numérico** ("52 mil pessoas salvaram esse projeto"), mas mudam todo dia: use sempre "mais de X mil" e confira na hora de gravar.
+## Fórmula exata do formato (para o roteirista)
+O gancho é **literal e sempre igual**, e é isso que faz o formato funcionar:
+
+> **"Esse repositório do GitHub com mais de [X] mil estrelas [faz tal coisa]!"**
+
+- **O número de estrelas é o herói do gancho.** Funciona como prova social (milhares de pessoas aprovaram) e dá credibilidade sem precisar mostrar rosto, então encaixa perfeito no perfil dark.
+- **"Faz tal coisa" é um resultado concreto em até 8 palavras:** "deixa foto pixelada nítida", "transcreve qualquer áudio de graça". Nada de "ferramenta de produtividade".
+- **Estrutura do vídeo (15 a 30 s):**
+  1. **0 a 2 s:** página do repositório na tela, zoom no contador de estrelas + texto grande com o gancho.
+  2. **2 a 5 s:** o resultado ("olha o que ele faz"), de preferência um antes/depois.
+  3. **5 a 25 s:** 2 ou 3 cortes rápidos do programa funcionando.
+  4. **Últimos 3 s:** CTA "Comenta GITHUB que eu te mando o link" (link na legenda do Instagram não é clicável).
+- **Tabela de estrelas para os ganchos** (conferidas nas páginas oficiais em 2026-11-15, já arredondadas para baixo):
+
+| Pauta | Repositório | Estrelas na página | Usar no gancho |
+|---|---|---|---|
+| P005 | upscayl/upscayl | 52,7 mil | mais de 50 mil |
+| P006 | cjpais/Handy | 38,9 mil | mais de 38 mil |
+| P007 | chidiwilliams/buzz | 22,8 mil | mais de 22 mil |
+| P008 | f/prompts.chat | 177,5 mil | mais de 170 mil |
+| P009 | Stirling-Tools/Stirling-PDF | 96,7 mil | mais de 95 mil |
+| P010 | microsoft/generative-ai-for-beginners | 123,6 mil | mais de 120 mil |
+| P011 | openclaw/openclaw | 394,5 mil | quase 400 mil |
+
+- **Regra da IA Works dentro do formato:** mantemos o gancho igual ao do nicho, mas só com repositório que um iniciante consegue usar (instalador de 1 clique nos *Releases*, sem terminal). Quando o repositório for famoso e técnico demais, ele entra como *Funciona ou Não?* (caso da P011), nunca como tutorial.
+- **Cuidado com o número:** estrelas mudam todo dia. Confirmar na hora de gravar e sempre usar "mais de", nunca o número exato.
+- **Limite desta pesquisa:** não achei dado público que meça a viralização do formato no Brasil (busca em 2026-11-15). A fórmula acima vem da observação do formato, que o próprio dono do perfil confirmou como o mais visto no nicho.
 
 ## Pautas
 
@@ -30,7 +51,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   4. **Não baixe** "Source code (zip)": é o código, não o programa.
   5. Se não houver Releases com instalador, o projeto é para desenvolvedores: pule.
 - **Resultado "uau" para o gancho:** a página "assustadora" do GitHub virando um botão de download em 3 cliques.
-- **3 ganchos possíveis:** "Viu um vídeo de repositório do GitHub e travou? Clica aqui." · "O botão de download do GitHub tá escondido. Olha onde." · "Você não precisa saber programar pra usar o GitHub."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub tem mais de 50 mil estrelas e você não sabe baixar? Olha onde fica o botão." · "Todo repositório com milhares de estrelas tem esse botão escondido." · "Viu um repositório com 100 mil estrelas e travou na página de código? Faz assim."
 - **Riscos/cuidados:** Windows e Mac podem avisar que o app "não é de desenvolvedor identificado". Explicar que isso é comum em open source, mas que só se instala app de projeto confiável (ver P012). Não ensinar comandos de terminal para contornar o bloqueio.
 - **Fontes:** [How-To Geek: How to download files from GitHub](https://www.howtogeek.com/827348/how-to-download-files-from-github/) · [Zapier: How to download from GitHub](https://zapier.com/blog/how-to-download-from-github/) (acessados em 2026-11-15)
 
@@ -45,7 +66,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   3. Escolher o modelo de ampliação e a pasta de saída.
   4. Clicar em *Upscayl* e comparar antes/depois. [VERIFICAR nomes exatos dos botões na gravação]
 - **Resultado "uau" para o gancho:** foto 300 px virando foto nítida, com divisória arrastável de antes/depois.
-- **3 ganchos possíveis:** "Essa foto tava assim. Agora tá assim. De graça." · "Pare de pagar app pra melhorar foto." · "Esse projeto do GitHub tem mais de 50 mil estrelas e faz isso aqui."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub com mais de 50 mil estrelas deixa qualquer foto pixelada nítida!" · "Mais de 50 mil estrelas no GitHub: esse programa grátis salva foto borrada." · "Esse repositório com mais de 50 mil estrelas substitui app pago de melhorar foto."
 - **Riscos/cuidados:** **exige placa de vídeo compatível com Vulkan**; o README diz que muitas placas integradas (iGPU) não funcionam e que não roda só na CPU. Avisar na legenda. Última versão é de dez/2024: projeto estável, mas sem atualização recente. Não ampliar foto de terceiros para uso comercial.
 - **Fontes:** [GitHub upscayl/upscayl](https://github.com/upscayl/upscayl) · [Releases v2.15.0](https://github.com/upscayl/upscayl/releases/tag/v2.15.0) (acessados em 2026-11-15)
 
@@ -60,7 +81,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   3. Escolher o modelo (Whisper Small/Medium/Turbo/Large ou Parakeet V3).
   4. Clicar em qualquer campo de texto, segurar o atalho, falar e soltar: o texto é colado sozinho.
 - **Resultado "uau" para o gancho:** um e-mail inteiro aparecendo no Gmail sem tocar no teclado.
-- **3 ganchos possíveis:** "Eu não digito mais e-mail. Olha." · "Esse app grátis transforma sua voz em texto em qualquer lugar do computador." · "Sem internet, sem assinatura, sem enviar sua voz pra ninguém."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub com mais de 38 mil estrelas te deixa digitar falando em qualquer programa!" · "Mais de 38 mil estrelas: esse app grátis transforma sua voz em texto, sem internet." · "Esse repositório com mais de 38 mil estrelas escreve seus e-mails enquanto você fala."
 - **Riscos/cuidados:** processamento é local (ponto forte de privacidade). Modelos grandes podem ficar lentos em PC fraco. Há recurso experimental de pós-processamento que pode usar IA externa: não ativar no tutorial.
 - **Fontes:** [GitHub cjpais/Handy](https://github.com/cjpais/Handy) (acessado em 2026-11-15)
 
@@ -76,7 +97,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   4. Exportar em TXT (para virar ata no ChatGPT) ou SRT/VTT (legenda).
 - **Prompt base sugerido (etapa 2, no ChatGPT/Claude):** "Transforme a transcrição abaixo em uma ata com: decisões tomadas, tarefas (responsável e prazo) e pendências. Use tópicos curtos."
 - **Resultado "uau" para o gancho:** 1 hora de reunião virando ata de meia página.
-- **3 ganchos possíveis:** "Nunca mais faço ata de reunião." · "Esse programa grátis escreve tudo o que foi falado, sem internet." · "Cola o link do YouTube e ganha o texto do vídeo inteiro."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub com mais de 22 mil estrelas transcreve qualquer áudio de graça, sem internet!" · "Mais de 22 mil estrelas: esse programa transforma sua reunião em texto." · "Esse repositório com mais de 22 mil estrelas tira o texto de qualquer vídeo do YouTube."
 - **Riscos/cuidados:** instalador do Windows não é assinado (vai aparecer aviso). Gravar reunião exige consentimento dos participantes (LGPD). Transcrever vídeo de terceiros: uso pessoal/estudo.
 - **Fontes:** [GitHub chidiwilliams/buzz](https://github.com/chidiwilliams/buzz) (acessado em 2026-11-15)
 
@@ -92,7 +113,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   4. Acrescentar no fim: "Responda em português do Brasil." [VERIFICAR fluxo de busca/cópia no site na hora de gravar]
 - **Prompt base sugerido:** escolher 3 prompts da biblioteca e traduzir/adaptar para a persona (currículo, atendimento, posts), sempre citando a fonte.
 - **Resultado "uau" para o gancho:** "177 mil pessoas salvaram essa lista de prompts."
-- **3 ganchos possíveis:** "A lista de prompts mais salva do GitHub é grátis." · "Copiei 3 prompts dessa biblioteca e minha IA ficou outra." · "Você tá escrevendo prompt do zero à toa."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub com mais de 170 mil estrelas tem prompt pronto pra qualquer coisa!" · "Mais de 170 mil estrelas: a maior biblioteca de prompts grátis do mundo." · "Esse repositório com mais de 170 mil estrelas te faz parar de escrever prompt do zero."
 - **Riscos/cuidados:** como é CC0, pode adaptar, mas cite a fonte por transparência. Prompts em inglês: mostrar o truque de pedir resposta em PT.
 - **Fontes:** [GitHub f/prompts.chat](https://github.com/f/prompts.chat) (acessado em 2026-11-15)
 
@@ -107,7 +128,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   3. Arrastar o PDF e salvar o resultado.
   4. No Windows, se abrir em branco, a documentação manda instalar o Microsoft Edge WebView2 Runtime.
 - **Resultado "uau" para o gancho:** PDF escaneado virando PDF pesquisável (OCR) offline.
-- **3 ganchos possíveis:** "Para de subir seu RG em site de PDF." · "Juntar, cortar, comprimir e assinar PDF: tudo grátis, no seu PC." · "Esse projeto tem quase 100 mil estrelas no GitHub e você não conhece."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub com mais de 95 mil estrelas faz tudo com PDF, de graça e no seu PC!" · "Mais de 95 mil estrelas: juntar, cortar, comprimir e assinar PDF sem site cheio de anúncio." · "Esse repositório com mais de 95 mil estrelas substitui todo site de PDF."
 - **Riscos/cuidados:** a página não deixa explícito se o desktop é 100% grátis: **[VERIFICAR]** ao instalar. A IA aqui é secundária (OCR); posicionar como "ferramenta que todo mundo precisa", não como "IA".
 - **Fontes:** [GitHub Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) · [Stirling PDF: Downloads](https://stirlingpdf.com/downloads) · [Docs: Windows Installation](https://docs.stirlingpdf.com/Installation/Windows%20Installation) (acessados em 2026-11-15)
 
@@ -121,7 +142,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   2. Ler as lições direto no navegador (não precisa baixar nada para ler).
   3. As partes práticas usam código (Python/TypeScript) e acesso a Azure OpenAI, Microsoft Foundry ou OpenAI API.
 - **Resultado "uau" para o gancho:** "A Microsoft deixou um curso inteiro de IA de graça no GitHub."
-- **3 ganchos possíveis:** "Curso de IA da Microsoft, grátis e em português." · "21 aulas de IA que você pode ler hoje." · "Salva esse link antes de pagar curso de IA."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub com mais de 120 mil estrelas é um curso de IA grátis da Microsoft, em português!" · "Mais de 120 mil estrelas: 21 aulas de IA de graça." · "Esse repositório com mais de 120 mil estrelas vale mais que muito curso pago."
 - **Riscos/cuidados:** **o curso é voltado para quem quer programar**; ser honesto: "a parte teórica serve pra todo mundo, a prática é pra quem quer ir além". Conflita parcialmente com o curso da IA Works: não posicionar como substituto. O README avisa que o GitHub Models será descontinuado no fim de jul/2026 (algumas lições podem estar desatualizadas).
 - **Fontes:** [GitHub microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) · [README pt-BR](https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/pt-BR/README.md) (acessados em 2026-11-15)
 
@@ -132,7 +153,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
 - **Ferramenta(s):** OpenClaw · grátis e open source (MIT), sem plano pago · conecta com WhatsApp, Telegram, Discord e outros · **instalação por terminal** (comando `curl ... | bash` ou PowerShell, ou npm) · https://github.com/openclaw/openclaw
 - **Passo a passo verificado:** não ensinar a instalar. Mostrar na tela: a página do projeto, o comando de terminal e os avisos de segurança do próprio README.
 - **Resultado "uau" para o gancho:** contraste "395 mil estrelas" × "e eu não recomendo para iniciante".
-- **3 ganchos possíveis:** "O repositório de IA mais famoso de 2026. Funciona ou não?" · "Todo mundo tá instalando isso. Eu não instalaria. Explico." · "Antes de dar acesso ao seu computador pra uma IA, veja isso."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório do GitHub tem quase 400 mil estrelas. Funciona ou não?" · "Quase 400 mil estrelas no GitHub, e eu não instalaria. Explico." · "Esse repositório com quase 400 mil estrelas quer acesso ao seu computador inteiro."
 - **Riscos/cuidados (fatos para o roteiro):**
   - O próprio README manda tratar mensagens recebidas como entrada não confiável e diz que as ferramentas rodam direto no computador, a menos que se configure isolamento (sandbox).
   - Kaspersky e TechRadar publicaram alertas sobre vulnerabilidades e "skills" maliciosas de terceiros.
@@ -151,7 +172,7 @@ O formato "repositório do GitHub" funciona por três motivos: parece um segredo
   4. **Nome do dono:** confira se é o repositório original (há muitas cópias/forks com o mesmo nome; as buscas desta pesquisa trouxeram várias, ex.: espelhos do Upscayl e do Handy).
   5. **README e licença:** projeto sério explica o que faz, requisitos e licença (MIT, AGPL etc.).
 - **Resultado "uau" para o gancho:** mostrar lado a lado o repositório original e uma cópia com o mesmo nome.
-- **3 ganchos possíveis:** "Antes de baixar qualquer coisa do GitHub, olha esses 5 pontos." · "Esse repositório é falso. Como eu sei?" · "Estrela no GitHub é igual avaliação de loja: aprende a ler."
+- **3 ganchos possíveis (fórmula oficial):** "Esse repositório tem milhares de estrelas. Mas é o original?" · "Antes de baixar um repositório do GitHub, olha esses 5 pontos além das estrelas." · "Estrela no GitHub é igual avaliação de loja: aprende a ler."
 - **Riscos/cuidados:** não mostrar repositório malicioso real com link clicável; usar print com o link desfocado. Estrela não é garantia de segurança: deixar isso claro.
 - **Fontes:** [How-To Geek](https://www.howtogeek.com/827348/how-to-download-files-from-github/) · [Upscayl](https://github.com/upscayl/upscayl) · [Handy](https://github.com/cjpais/Handy) (acessados em 2026-11-15)
 
