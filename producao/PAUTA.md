@@ -18,7 +18,7 @@ Pilar: `tutorial` · `prompt` · `descoberta` · `bastidor` · `venda`
 | P010 | Curso grátis de IA da Microsoft no GitHub, em pt-BR | carrossel | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-repositorios-github-virais.md | |
 | P011 | Funciona ou Não? OpenClaw, o repositório mais famoso do ano | reels | bastidor | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-repositorios-github-virais.md | |
 | P012 | 5 sinais de que um repositório do GitHub é confiável | carrossel | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-repositorios-github-virais.md | |
-| P013 | Repositório oficial com 195 mil estrelas que deixa o Claude mais inteligente (instalar Skill) | reels | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
+| P013 | Repositório oficial com 195 mil estrelas que deixa o Claude mais inteligente (instalar Skill) | reels | tutorial | ✍️ roteirizado | producao/02-roteiros/P013-skills-claude.md | |
 | P014 | Criar sua própria Skill conversando com o Claude (skill-creator) | reels | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
 | P015 | 5 Skills oficiais que todo iniciante deveria ligar no Claude | carrossel | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
 | P016 | awesome-claude-skills: lista com quase 80 mil estrelas | reels | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
