@@ -1,0 +1,73 @@
+/* IA Works: estilos-base dos carrosséis (1080×1350). Não altere cores/fontes aqui sem atualizar estrategia/02-identidade-visual.md */
+@font-face { font-family: "Space Grotesk"; font-weight: 500; src: url("../fontes/space-grotesk-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-weight: 700; src: url("../fontes/space-grotesk-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; src: url("../fontes/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; src: url("../fontes/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("../fontes/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 500; src: url("../fontes/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+
+:root {
+  --off: #F7F6F2; --branco: #FFFFFF; --ink: #14161A; --azul: #2F3BFF;
+  --verde: #D4F542; --cinza: #6B7079; --coral: #FF5A4E; --prompt-bg: #EEF0F5;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #ccc; font-family: "Inter", sans-serif; color: var(--ink); }
+
+/* Lâmina */
+.slide {
+  width: 1080px; height: 1350px; position: relative; overflow: hidden;
+  background: var(--off); padding: 110px 96px 150px; display: flex; flex-direction: column; gap: 40px;
+  margin-bottom: 20px;
+}
+.slide--azul { background: var(--azul); color: var(--branco); }
+.slide--centro { justify-content: center; }
+
+/* Tipografia */
+.tag { align-self: flex-start; font-family: "JetBrains Mono"; font-weight: 500; font-size: 28px; letter-spacing: .04em;
+  border: 3px solid var(--azul); color: var(--azul); border-radius: 999px; padding: 10px 26px; }
+.slide--azul .tag { border-color: var(--branco); color: var(--branco); }
+.titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 104px; line-height: 1.02; letter-spacing: -0.03em; }
+.titulo--m { font-size: 80px; }
+.subtitulo { font-family: "Space Grotesk"; font-weight: 500; font-size: 52px; line-height: 1.15; letter-spacing: -0.02em; }
+.texto { font-size: 40px; line-height: 1.4; font-weight: 500; }
+.texto--cinza { color: var(--cinza); }
+.slide--azul .texto--cinza { color: rgba(255,255,255,.75); }
+.numero { font-family: "Space Grotesk"; font-weight: 700; font-size: 150px; line-height: 1; color: var(--azul); }
+
+/* Assinaturas visuais */
+.mt { background: linear-gradient(transparent 55%, var(--verde) 55%, var(--verde) 92%, transparent 92%); padding: 0 .08em; }
+.ponto::after { content: ""; display: inline-block; width: .13em; height: .13em; background: var(--azul); margin-left: .04em; }
+.slide--azul .ponto::after { background: var(--verde); }
+.azul { color: var(--azul); }
+
+/* Janela de app (para prints) */
+.janela { background: var(--branco); border-radius: 28px; box-shadow: 0 18px 50px rgba(20,22,26,.12); overflow: hidden; }
+.janela::before { content: "● ● ●"; display: block; padding: 18px 28px; font-size: 22px; letter-spacing: 6px; color: #C9CCD3; border-bottom: 1px solid #EEE; }
+.janela img { display: block; width: 100%; }
+.janela .conteudo { padding: 36px; font-size: 34px; line-height: 1.45; }
+
+/* Caixa de prompt */
+.prompt { background: var(--prompt-bg); border-radius: 24px; padding: 40px 44px; font-family: "JetBrains Mono"; font-weight: 500;
+  font-size: 31px; line-height: 1.5; color: var(--ink); position: relative; white-space: pre-wrap; }
+.prompt::before { content: "PROMPT ⧉"; display: block; font-size: 22px; color: var(--azul); letter-spacing: .1em; margin-bottom: 18px; }
+.var { color: var(--azul); }
+
+/* Antes x Depois */
+.comparar { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.comparar > div { border-radius: 24px; padding: 36px; background: var(--branco); font-size: 34px; line-height: 1.35; }
+.antes b { color: var(--coral); } .depois b { color: var(--azul); }
+
+/* Lista */
+.lista { list-style: none; display: flex; flex-direction: column; gap: 26px; }
+.lista li { font-size: 40px; line-height: 1.3; font-weight: 500; padding-left: 56px; position: relative; }
+.lista li::before { content: ""; position: absolute; left: 0; top: .42em; width: 22px; height: 22px; background: var(--azul); }
+
+/* Rodapé fixo: logo + paginação */
+.rodape { position: absolute; left: 96px; right: 96px; bottom: 64px; display: flex; justify-content: space-between; align-items: center;
+  font-family: "Space Grotesk"; font-weight: 700; font-size: 32px; }
+.rodape .logo .ia { color: var(--azul); }
+.slide--azul .rodape .logo .ia { color: var(--branco); }
+.rodape .pag { font-family: "JetBrains Mono"; font-weight: 500; font-size: 26px; color: var(--cinza); }
+.slide--azul .rodape .pag { color: rgba(255,255,255,.7); }
+.seta { font-family: "Space Grotesk"; font-size: 34px; color: var(--azul); }
+.slide--azul .seta { color: var(--branco); }

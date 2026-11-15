@@ -15,6 +15,8 @@ produto de entrada e curso.
 | [conteudo/calendario-30-dias.md](conteudo/calendario-30-dias.md) | O que postar nos primeiros 30 dias |
 | [curso/01-estrutura-do-curso.md](curso/01-estrutura-do-curso.md) | Escada de produtos, módulos, preço, bônus |
 | [curso/02-isca-digital.md](curso/02-isca-digital.md) | 50 prompts grátis + sequência de e-mails |
+| [marca/](marca/) | Logo (SVG/PNG), fontes e kit de carrossel |
+| [producao/README.md](producao/README.md) | **Agentes e comandos**: /pesquisar, /roteirizar, /video, /carrossel, /produzir |
 
 ## Resumo em 1 minuto
 - **Marca:** IA Works ✅ registrado no Instagram · slogan "IA que funciona."
