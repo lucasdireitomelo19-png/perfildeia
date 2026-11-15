@@ -6,14 +6,14 @@ o curso caro**. Suba a escada por degraus:
 
 | Degrau | Produto | Preço | Para quê |
 |---|---|---|---|
-| 0 | 🎁 **50 Prompts Prontos** (PDF/Notion) | Grátis | Capturar e-mail/WhatsApp |
+| 0 | 🎁 **50 Prompts que Funcionam** (PDF/Notion) | Grátis | Capturar e-mail/WhatsApp |
 | 1 | 💬 **Pack 500 Prompts + Guia de Ferramentas** | R$ 27–47 | Primeira compra, valida que o público paga. Venda direta e perpétua pelo link da bio |
-| 2 | 🎓 **Curso principal "Método Faz com IA"** | R$ 197–297 (ou 12x) | Produto central, vendido em lançamentos |
+| 2 | 🎓 **Curso principal "IA Works Academy"** | R$ 197–297 (ou 12x) | Produto central, vendido em lançamentos |
 | 3 | 🚀 **Comunidade / Mentoria em grupo** (depois) | R$ 47–97/mês | Receita recorrente, para quem quer ir além |
 
 Quem compra o degrau 1 vira o melhor público para o lançamento do curso.
 
-## Curso principal: "Método Faz com IA"
+## Curso principal: "IA Works Academy"
 **Promessa:** *"Em 30 dias você vai usar IA para fazer em minutos o que hoje leva horas,
 no trabalho, no seu negócio e na vida, mesmo sem saber nada de tecnologia."*
 

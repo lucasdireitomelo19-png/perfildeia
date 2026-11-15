@@ -27,7 +27,7 @@ as aulas semanalmente conforme a turma avança.
 ### Semana 1: Aquecimento (dias 1–7)
 - Conteúdos sobre os **maiores problemas** do público (ainda sem falar do curso)
 - Stories: enquetes, caixas de pergunta, "você já tentou usar IA e desistiu?"
-- Anúncio da **"Semana Faz com IA"**: 3 aulas grátis. Captação de inscritos no grupo de WhatsApp/Telegram
+- Anúncio da **"Semana IA Works"**: 3 aulas grátis. Captação de inscritos no grupo de WhatsApp/Telegram
 - Anúncios pagos (opcional): R$ 20–50/dia para a página de inscrição
 
 ### Semana 2: Conteúdo gratuito (dias 8–14)

@@ -1,11 +1,11 @@
-# Isca digital: "50 Prompts Prontos para Usar Hoje"
+# Isca digital: "50 Prompts que Funcionam"
 
 **Formato:** PDF de 15–20 páginas no visual claro da marca (ou página Notion pública).
 **Entrega:** ManyChat no Direct (palavra-chave "PROMPTS") + página de captura no link da bio.
 **Captura:** nome + e-mail + WhatsApp (opcional). Ferramentas: MailerLite/Brevo (grátis no início).
 
 ## Estrutura
-1. Capa: "50 Prompts Prontos para Usar Hoje▌"
+1. Capa: "50 Prompts que Funcionam▌", by IA Works
 2. Como usar (a fórmula P.T.C.F. em 1 página)
 3. 10 prompts para trabalho
 4. 10 prompts para vender / negócios

@@ -44,14 +44,15 @@ Tamanho mínimo no carrossel: 36 px (em 1080×1350).
 - **Etiquetas** `GRÁTIS` · `INICIANTE` · `2 MIN`: pílulas com contorno azul.
 
 ## Logo e foto de perfil
-- **Wordmark:** `faz com IA▌`, com "faz com" em grafite, "IA" em azul e cursor azul.
+- **Wordmark:** `IA works▌`, com "IA" em azul `#2F3BFF` (Space Grotesk Bold), "works" em grafite e cursor azul piscando.
+- **Ícone alternativo:** uma engrenagem ou um ✓ minimalista dentro do "o" de works, que reforça o "funciona".
 - **Foto de perfil:** fundo azul `#2F3BFF` com "IA▌" em branco, grande e centralizado.
   Num feed claro, a foto em azul sólido é o que chama atenção.
 
 Prompt para gerar variações (Ideogram / ChatGPT / Midjourney):
 ```
-Minimal wordmark logo "faz com IA" on off-white background, lowercase geometric
-sans-serif, "faz com" in dark graphite #14161A, "IA" in electric blue #2F3BFF
+Minimal wordmark logo "IA works" on off-white background, geometric
+sans-serif, "IA" bold in electric blue #2F3BFF, "works" lowercase in dark graphite #14161A
 followed by a blue terminal cursor block, flat vector, clean, no gradients, no robots
 ```
 
