@@ -39,22 +39,30 @@ Tamanho mínimo no carrossel: 36 px (em 1080×1350).
 - **Janela de app:** card branco, cantos arredondados (24 px), sombra suave e 3 bolinhas no topo. Usar para todo print.
 - **Caixa de prompt:** card cinza bem claro `#EEF0F5` com fonte mono e um ícone de "copiar" em azul.
 - **Marca-texto verde** atrás de 1–2 palavras do título.
-- **Cursor `▌` azul** depois dos títulos, a assinatura visual da marca.
+- **Ponto final quadrado azul** no fim dos títulos, a assinatura visual da marca (como no logo).
 - **Setas e círculos desenhados à mão** em azul.
 - **Etiquetas** `GRÁTIS` · `INICIANTE` · `2 MIN`: pílulas com contorno azul.
 
-## Logo e foto de perfil
-- **Wordmark:** `IA works▌`, com "IA" em azul `#2F3BFF` (Space Grotesk Bold), "works" em grafite e cursor azul piscando.
-- **Ícone alternativo:** uma engrenagem ou um ✓ minimalista dentro do "o" de works, que reforça o "funciona".
-- **Foto de perfil:** fundo azul `#2F3BFF` com "IA▌" em branco, grande e centralizado.
-  Num feed claro, a foto em azul sólido é o que chama atenção.
+## Logo e foto de perfil ✅ (arquivos em `marca/logo/`)
+Logo minimalista, só tipografia e um ponto: **`IAworks.`**
+- "IA" em Space Grotesk Bold, azul `#2F3BFF`
+- "works" em Space Grotesk Medium, grafite `#14161A`
+- **Ponto final quadrado** azul: é a assinatura da marca e ecoa o slogan "IA que funciona."
+- **Foto de perfil / ícone:** "IA." branco sobre azul, com o ponto em verde-limão `#D4F542`
 
-Prompt para gerar variações (Ideogram / ChatGPT / Midjourney):
-```
-Minimal wordmark logo "IA works" on off-white background, geometric
-sans-serif, "IA" bold in electric blue #2F3BFF, "works" lowercase in dark graphite #14161A
-followed by a blue terminal cursor block, flat vector, clean, no gradients, no robots
-```
+| Arquivo | Uso |
+|---|---|
+| `iaworks-principal.svg/.png` | Uso padrão em fundo claro (transparente) |
+| `iaworks-principal-fundo` | Com fundo off-white |
+| `iaworks-negativo-azul` | Sobre fundo azul (capas destaque) |
+| `iaworks-negativo-escuro` | Sobre fundo escuro |
+| `iaworks-mono-preto` | Uma cor (impressão, marca d'água) |
+| `iaworks-icone-perfil` | **Foto de perfil do Instagram** (o app recorta em círculo) |
+| `iaworks-icone-app` | Ícone arredondado (avatar em outras redes, favicon) |
+| `iaworks-icone-claro` | Ícone em versão clara |
+
+Regras: não distorcer, não mudar as cores, não colocar sombra ou contorno, e deixar
+um respiro em volta do tamanho do "A". No Canva, use os arquivos **SVG**, que são vetor e não perdem qualidade.
 
 ## Padrões de formato
 
@@ -65,7 +73,7 @@ followed by a blue terminal cursor block, flat vector, clean, no gradients, no r
 | Capa do Reels | 1080×1920, mas o essencial no centro 4:5 | O grid corta para 4:5 |
 
 ## Templates (crie no Canva e reutilize)
-1. **Capa Tutorial:** "Como fazer ___ com IA▌", com marca-texto verde, print inclinado em janela branca e etiqueta `GRÁTIS`.
+1. **Capa Tutorial:** "Como fazer ___ com IA.", com marca-texto verde, print inclinado em janela branca e etiqueta `GRÁTIS`.
 2. **Capa Prompt:** caixa de prompt grande + "Copie esse prompt".
 3. **Capa Antes/Depois:** tela dividida, `SEM IA: 2h` em coral e `COM IA: 5 min` em azul.
 4. **Capa Lista:** "5 IAs que ___" com números grandes em azul.
@@ -84,7 +92,7 @@ ritmo e reconhecimento. Os 3 posts fixados:
 - **Moldura:** a gravação vai dentro da janela branca, sobre fundo off-white.
 - **Legendas:** grafite com palavra-chave em azul, ou texto branco numa pílula azul.
 - **B-roll:** mãos no teclado/celular em ambiente claro e imagens geradas por IA na paleta da marca.
-- **Vinheta final de 0,5 s:** o `IA▌` com o cursor piscando.
+- **Vinheta final de 0,5 s:** o ícone "IA." com o ponto aparecendo.
 
 ## Voz: ElevenLabs
 A voz é a "cara" do perfil dark, então ela precisa ser **sempre a mesma**.
