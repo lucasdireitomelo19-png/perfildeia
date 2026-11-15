@@ -9,6 +9,7 @@ produto de entrada e curso.
 | [estrategia/01-posicionamento-e-nome.md](estrategia/01-posicionamento-e-nome.md) | Posicionamento, persona, nomes, bio, destaques |
 | [estrategia/02-identidade-visual.md](estrategia/02-identidade-visual.md) | Paleta clara, fontes, logo, templates, vídeo sem rosto, voz ElevenLabs |
 | [estrategia/03-estrategia-de-conteudo.md](estrategia/03-estrategia-de-conteudo.md) | Pilares, frequência, ganchos, métricas, 60 ideias |
+| [estrategia/nomes-para-checar.md](estrategia/nomes-para-checar.md) | Lista de @ para checar no Instagram + como checar |
 | [estrategia/04-lancamento.md](estrategia/04-lancamento.md) | Linha do tempo, lançamento semente e completo |
 | [conteudo/calendario-30-dias.md](conteudo/calendario-30-dias.md) | O que postar nos primeiros 30 dias |
 | [curso/01-estrutura-do-curso.md](curso/01-estrutura-do-curso.md) | Escada de produtos, módulos, preço, bônus |
