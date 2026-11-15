@@ -1,4 +1,4 @@
-# IA Works ▌ — "IA que funciona."
+# IAworks. — "IA que funciona."
 
 Plano completo do perfil dark (sem rosto) de IA.
 

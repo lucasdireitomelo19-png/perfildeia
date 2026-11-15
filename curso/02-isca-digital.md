@@ -5,7 +5,7 @@
 **Captura:** nome + e-mail + WhatsApp (opcional). Ferramentas: MailerLite/Brevo (grátis no início).
 
 ## Estrutura
-1. Capa: "50 Prompts que Funcionam▌", by IA Works
+1. Capa: "50 Prompts que Funcionam.", by IA Works
 2. Como usar (a fórmula P.T.C.F. em 1 página)
 3. 10 prompts para trabalho
 4. 10 prompts para vender / negócios
@@ -33,7 +33,7 @@ impacto, 3 bullets e uma chamada para compra. Público: [PÚBLICO].
 ## Sequência de e-mails após o download (automática)
 | Dia | Assunto | Conteúdo |
 |---|---|---|
-| 0 | "Seus 50 prompts chegaram ▌" | Link + 1 dica de uso |
+| 0 | "Seus 50 prompts chegaram." | Link + 1 dica de uso |
 | 2 | "O erro que deixa a IA burra" | Conteúdo de valor + link para um post |
 | 4 | "3 IAs grátis que eu uso toda semana" | Valor |
 | 6 | "Quer os outros 450?" | Oferta do Pack R$ 27–47 |

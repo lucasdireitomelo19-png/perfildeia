@@ -14,7 +14,7 @@ destaca num nicho em que quase todo mundo usa preto e roxo neon.
 | Fundo principal | Off-white | `#F7F6F2` | Fundo de quase tudo |
 | Cards / janelas | Branco | `#FFFFFF` | Prints, caixas de prompt (com sombra suave) |
 | Texto | Grafite | `#14161A` | Títulos e textos |
-| Destaque 1 (ação) | Azul elétrico | `#2F3BFF` | Setas, palavras-chave, botões, logo, cursor `▌` |
+| Destaque 1 (ação) | Azul elétrico | `#2F3BFF` | Setas, palavras-chave, botões, logo, ponto final |
 | Destaque 2 (marca-texto) | Verde-limão | `#D4F542` | Faixa atrás de palavras do título, como marca-texto |
 | Apoio | Cinza | `#6B7079` | Textos secundários |
 | Alerta (raro) | Coral | `#FF5A4E` | "Erro", "antes", "não faça" |
