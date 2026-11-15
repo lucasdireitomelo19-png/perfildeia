@@ -42,10 +42,10 @@ Abre o prompts ponto chat, e clica em Browse Prompts. Esse aqui ajuda a avisar o
 
 Copia e cola no tchat-gê-pê-tê, Claude, ou Gemini.
 
-Tá em inglês? Troca os colchetes pelos dados do seu negócio... e escreve no fim: responda em português do Brasil.
+Tá em inglês? Sem problema. Conta os dados do seu negócio... e escreve no fim: responda em português do Brasil.
 
 Pronto. O e-mail pro cliente sai em português.
 
-Comenta prompt, que eu te mando o link... e o truque pra usar em português.
+Comenta prompt, que eu te mando o link, e o truque pra usar em português.
 
 Testado e aprovado. IA Works: IA que funciona.
