@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# id: P008 | formato: reels | status: produzido
+# fonte: producao/02-roteiros/P008-prompts-chat.md
+# NARRAÇÃO PARA O ELEVENLABS. As linhas com "#" são comentários: NÃO cole no ElevenLabs.
+#
+# CONFIGURAÇÃO (a mesma de sempre, não troque a voz):
+#   Voz: a voz fixa da marca IA Works (nome/ID anotado no seu ElevenLabs).
+#        Só voz da Voice Library ou clone da sua própria voz. Nunca clonar
+#        nem imitar a voz de pessoa real ou famosa.
+#   Modelo: o multilíngue mais recente do seu plano
+#   Stability: 40–50% | Similarity: ~75% | Style: 0–20%
+#   Speed: levemente acelerada (um pouco acima de 1.0; ajuste no ouvido)
+#   Plano: precisa de licença comercial (plano pago) para uso no perfil.
+#
+# COMO GERAR: um bloco por cena (8 blocos, separados por linha em branco).
+#   Gere cena a cena e baixe como C1.mp3 ... C8.mp3. Se uma palavra sair errada,
+#   regrave só aquele bloco.
+#
+# PRONÚNCIA: se a voz errar, troque SÓ a palavra problemática pela grafia ao lado
+# (ou cadastre no dicionário de pronúncia do ElevenLabs e mantenha a grafia normal):
+#   GitHub          -> guít-râb
+#   prompts ponto chat -> prômpts ponto tchét
+#   Browse Prompts  -> bráuz prômpts
+#   tchat-gê-pê-tê  -> (já está fonético; com dicionário configurado, use "ChatGPT")
+#   Claude          -> clôd
+#   Gemini          -> djé-mi-nai
+#   prompt          -> prômpt  (está em minúsculas de propósito: em CAIXA ALTA
+#                     a voz pode soletrar P-R-O-M-P-T; na tela ele aparece em caixa alta)
+#   IA Works        -> I A uórks
+#
+# DURAÇÃO ALVO: ~41 s no total (104 palavras). Teto: 45 s.
+#   Se a soma dos 8 áudios passar de 45 s, apague do bloco 3 a frase
+#   "Esse aqui ajuda a avisar o cliente do aumento de preço." (corte sugerido pelo
+#   roteirista: ela vira só texto na tela; ver edicao.md) e regrave o bloco 3.
+# ---------------------------------------------------------------------------
+
+Esse repositório do GitHub... com mais de cento e setenta mil estrelas... tem prompt pronto pra qualquer coisa!
+
+São quase três mil comandos prontos pra IA... de graça.
+
+Abre o prompts ponto chat, e clica em Browse Prompts. Esse aqui ajuda a avisar o cliente do aumento de preço.
+
+Copia e cola no tchat-gê-pê-tê, Claude, ou Gemini.
+
+Tá em inglês? Troca os colchetes pelos dados do seu negócio... e escreve no fim: responda em português do Brasil.
+
+Pronto. O e-mail pro cliente sai em português.
+
+Comenta prompt, que eu te mando o link... e o truque pra usar em português.
+
+Testado e aprovado. IA Works: IA que funciona.
