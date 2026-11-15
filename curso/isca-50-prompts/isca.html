@@ -1,0 +1,252 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>50 prompts que funcionam · IA Works</title>
+<style>@font-face { font-family: "Space Grotesk"; font-weight: 500; src: url("../../marca/fontes/space-grotesk-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-weight: 700; src: url("../../marca/fontes/space-grotesk-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; src: url("../../marca/fontes/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; src: url("../../marca/fontes/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("../../marca/fontes/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 500; src: url("../../marca/fontes/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+
+:root { --off:#F7F6F2; --branco:#FFFFFF; --ink:#14161A; --azul:#2F3BFF; --verde:#D4F542; --cinza:#6B7079; --prompt-bg:#EEF0F5; }
+@page { size: 1080px 1350px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.pg { width: 1080px; height: 1350px; position: relative; overflow: hidden; background: var(--off);
+  padding: 90px 90px 140px; display: flex; flex-direction: column; gap: 34px; page-break-after: always; }
+footer { position: absolute; left: 90px; right: 90px; bottom: 56px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: "Space Grotesk"; font-weight: 700; font-size: 30px; letter-spacing: -0.02em; }
+.logo .ia { color: var(--azul); }
+.pt::after { content: ""; display: inline-block; width: .13em; height: .13em; background: var(--azul); margin-left: .04em; }
+.pag { font-family: "JetBrains Mono"; font-weight: 500; font-size: 24px; color: var(--cinza); }
+
+.tag { align-self: flex-start; font-family: "JetBrains Mono"; font-weight: 500; font-size: 24px; letter-spacing: .06em;
+  border: 3px solid var(--azul); color: var(--azul); border-radius: 999px; padding: 8px 24px; }
+.h2 { font-family: "Space Grotesk"; font-weight: 700; font-size: 72px; line-height: 1.02; letter-spacing: -0.03em; }
+.mt { background: linear-gradient(transparent 55%, var(--verde) 55%, var(--verde) 92%, transparent 92%); padding: 0 .06em; }
+.var { color: var(--azul); }
+
+/* Capa */
+.capa { justify-content: center; gap: 44px; }
+.capa-titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 132px; line-height: .98; letter-spacing: -0.04em; }
+.capa-sub { font-size: 40px; line-height: 1.35; color: var(--cinza); max-width: 860px; }
+.capa-lista { list-style: none; display: flex; flex-wrap: wrap; gap: 14px; }
+.capa-lista li { background: var(--branco); border-radius: 999px; padding: 14px 26px; font-size: 28px; font-weight: 500; }
+.capa-logo { position: absolute; left: 90px; bottom: 70px; }
+.capa-logo .logo { font-size: 46px; }
+
+/* Como usar */
+.passos { list-style: none; counter-reset: p; display: flex; flex-direction: column; gap: 22px; }
+.passos li { counter-increment: p; position: relative; padding-left: 78px; font-size: 31px; line-height: 1.38; }
+.passos li::before { content: counter(p); position: absolute; left: 0; top: 0; width: 54px; height: 54px; background: var(--azul); color: #fff;
+  font-family: "Space Grotesk"; font-weight: 700; font-size: 30px; display: flex; align-items: center; justify-content: center; }
+.ptcf { background: var(--branco); border-radius: 28px; padding: 40px; margin-top: 10px; }
+.ptcf-titulo { font-size: 32px; margin-bottom: 26px; }
+.ptcf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.ptcf-grid div { background: var(--off); border-radius: 18px; padding: 24px; font-family: "Space Grotesk"; font-weight: 500; font-size: 34px; }
+.ptcf-grid b { color: var(--azul); font-weight: 700; }
+.ptcf-grid span { font-family: "Inter"; font-size: 24px; color: var(--cinza); }
+
+/* Categorias */
+.cat { display: flex; gap: 28px; align-items: center; }
+.cat-emoji { width: 120px; height: 120px; flex: none; background: var(--branco); border-radius: 28px; display: flex; align-items: center; justify-content: center; font-size: 64px; }
+.cat-intro { font-size: 28px; color: var(--cinza); margin-top: 8px; }
+.cat-mini { font-family: "Space Grotesk"; font-weight: 700; font-size: 30px; color: var(--cinza); }
+.cards { display: flex; flex-direction: column; gap: 20px; }
+.card { background: var(--branco); border-radius: 24px; padding: 24px 30px; }
+.card-titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 32px; letter-spacing: -0.01em; margin-bottom: 16px; display: flex; gap: 16px; align-items: baseline; }
+.num { font-family: "JetBrains Mono"; font-weight: 500; font-size: 24px; color: var(--azul); }
+.prompt { background: var(--prompt-bg); border-radius: 16px; padding: 22px 26px; font-family: "JetBrains Mono"; font-weight: 500;
+  font-size: 22.5px; line-height: 1.5; white-space: pre-wrap; }
+
+/* Final */
+.final { background: var(--azul); color: #fff; justify-content: center; }
+.fim { display: flex; flex-direction: column; gap: 36px; }
+.fim-titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 110px; line-height: 1; letter-spacing: -0.04em; }
+.fim-titulo .pt::after, .fim-logo .pt::after { background: var(--verde); }
+.fim-texto { font-size: 38px; line-height: 1.35; opacity: .9; }
+.fim-lista { list-style: none; display: flex; flex-direction: column; gap: 18px; }
+.fim-lista li { font-size: 32px; padding-left: 44px; position: relative; }
+.fim-lista li::before { content: ""; position: absolute; left: 0; top: .4em; width: 18px; height: 18px; background: var(--verde); }
+.fim-assinatura { font-size: 30px; opacity: .85; margin-top: 30px; }
+.fim-logo .logo { font-size: 72px; color: #fff; }
+.fim-logo .logo .ia { color: #fff; }
+.fim-slogan { font-family: "Space Grotesk"; font-weight: 500; font-size: 34px; }
+</style></head><body><section class="pg capa sem-rodape">
+<div class="capa-topo"><span class="tag">GUIA GRÁTIS</span></div>
+<h1 class="capa-titulo">50 prompts que <span class="mt">funcionam</span><span class="pt"></span></h1>
+<p class="capa-sub">Copie, troque o que está entre [colchetes] e use hoje no ChatGPT, Claude ou Gemini.</p>
+<ul class="capa-lista"><li>💼 Trabalho</li><li>🛍️ Vendas e negócios</li><li>📱 Conteúdo e redes sociais</li><li>📚 Estudos</li><li>🏡 Vida pessoal</li></ul>
+<div class="capa-logo"><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span></div>
+</section><section class="pg ">
+<span class="tag">ANTES DE COMEÇAR</span>
+<h2 class="h2">Como usar este guia<span class="pt"></span></h2>
+<ol class="passos">
+  <li><b>Copie o prompt</b> e cole no ChatGPT, no Claude ou no Gemini. Todos funcionam no plano gratuito.</li>
+  <li><b>Troque tudo o que está entre <span class="var">[COLCHETES]</span></b> pelas informações do seu caso. Quanto mais detalhe, melhor a resposta.</li>
+  <li><b>Não aceite a primeira resposta.</b> Peça ajustes: "mais curto", "mais informal", "me dê outras 3 opções".</li>
+  <li><b>Confira o que é importante.</b> A IA pode errar dados, valores e datas. Revise antes de enviar ou decidir.</li>
+</ol>
+<div class="ptcf">
+  <p class="ptcf-titulo">A fórmula por trás de todos eles: <b>P.T.C.F.</b></p>
+  <div class="ptcf-grid">
+    <div><b>P</b>apel<br><span>quem a IA deve ser</span></div>
+    <div><b>T</b>arefa<br><span>o que ela deve fazer</span></div>
+    <div><b>C</b>ontexto<br><span>os detalhes do seu caso</span></div>
+    <div><b>F</b>ormato<br><span>como você quer a resposta</span></div>
+  </div>
+</div>
+<footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">02</span></footer></section><section class="pg "><header class="cat"><span class="cat-emoji">💼</span><div><h2 class="h2">Trabalho<span class="pt"></span></h2><p class="cat-intro">Para escrever melhor, resumir mais rápido e organizar o dia.</p></div></header><div class="cards"><article class="card"><p class="card-titulo"><span class="num">01</span>E-mail difícil, do jeito certo</p>
+<div class="prompt">Você é um especialista em comunicação profissional.
+Reescreva o e-mail abaixo para ficar educado, firme e com no máximo 6 linhas.
+Objetivo: <span class="var">[O QUE VOCÊ QUER CONSEGUIR]</span>.
+E-mail original: <span class="var">[COLE AQUI]</span></div></article><article class="card"><p class="card-titulo"><span class="num">02</span>Resumo de documento longo</p>
+<div class="prompt">Resuma o documento abaixo em 10 tópicos curtos.
+Depois liste: 3 pontos de atenção, prazos e valores citados, e as decisões que eu preciso tomar.
+Documento: <span class="var">[COLE O TEXTO OU ANEXE O ARQUIVO]</span></div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">03</span></footer></section><section class="pg "><p class="cat-mini">💼 Trabalho</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">03</span>Reunião vira lista de tarefas</p>
+<div class="prompt">Abaixo estão minhas anotações (ou a transcrição) de uma reunião.
+Transforme em: resumo de 5 linhas, decisões tomadas e tabela de tarefas com responsável e prazo.
+Anotações: <span class="var">[COLE AQUI]</span></div></article><article class="card"><p class="card-titulo"><span class="num">04</span>Fórmula de planilha sem saber fórmula</p>
+<div class="prompt">Estou usando <span class="var">[EXCEL / GOOGLE PLANILHAS]</span>.
+Na coluna <span class="var">[A]</span> tenho <span class="var">[DESCREVA OS DADOS]</span> e quero <span class="var">[O QUE VOCÊ QUER CALCULAR]</span>.
+Me dê a fórmula pronta e explique em 2 linhas como ela funciona.</div></article><article class="card"><p class="card-titulo"><span class="num">05</span>Apresentação em minutos</p>
+<div class="prompt">Crie a estrutura de uma apresentação de <span class="var">[NÚMERO]</span> slides sobre <span class="var">[TEMA]</span> para <span class="var">[PÚBLICO]</span>.
+Para cada slide: título, 3 tópicos curtos e uma sugestão de imagem.
+Tom: <span class="var">[FORMAL / DESCONTRAÍDO]</span>.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">04</span></footer></section><section class="pg "><p class="cat-mini">💼 Trabalho</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">06</span>Currículo que passa no filtro</p>
+<div class="prompt">Você é um recrutador sênior.
+Reescreva minhas experiências como um currículo de 1 página para a vaga de <span class="var">[VAGA]</span>: resumo de 3 linhas, conquistas com números e palavras-chave da área.
+Minhas experiências: <span class="var">[COLE AQUI]</span></div></article><article class="card"><p class="card-titulo"><span class="num">07</span>Treino de entrevista</p>
+<div class="prompt">Simule uma entrevista de emprego para a vaga de <span class="var">[VAGA]</span> na área de <span class="var">[ÁREA]</span>.
+Faça uma pergunta por vez e espere minha resposta.
+Depois de cada resposta, me dê uma nota de 0 a 10 e uma dica para melhorar.</div></article><article class="card"><p class="card-titulo"><span class="num">08</span>Organizar a semana</p>
+<div class="prompt">Esta é minha lista de tarefas da semana, bagunçada: <span class="var">[COLE A LISTA]</span>.
+Tenho <span class="var">[X]</span> horas livres por dia.
+Organize por prioridade (urgente e importante primeiro) e distribua de segunda a sexta em uma tabela.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">05</span></footer></section><section class="pg "><p class="cat-mini">💼 Trabalho</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">09</span>Pedido de aumento</p>
+<div class="prompt">Me ajude a preparar uma conversa para pedir aumento.
+Cargo: <span class="var">[CARGO]</span>. Tempo de empresa: <span class="var">[TEMPO]</span>. Minhas entregas: <span class="var">[LISTE]</span>.
+Crie um roteiro curto com abertura, argumentos com dados e respostas para 3 objeções prováveis do meu chefe.</div></article><article class="card"><p class="card-titulo"><span class="num">10</span>Mensagem clara para a equipe</p>
+<div class="prompt">Transforme a informação abaixo em uma mensagem curta e clara para a equipe no <span class="var">[WHATSAPP / E-MAIL / SLACK]</span>.
+Comece pelo mais importante, use tópicos e termine com o próximo passo.
+Informação: <span class="var">[COLE AQUI]</span></div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">06</span></footer></section><section class="pg "><header class="cat"><span class="cat-emoji">🛍️</span><div><h2 class="h2">Vendas e negócios<span class="pt"></span></h2><p class="cat-intro">Para atender, vender e divulgar sem passar o dia no celular.</p></div></header><div class="cards"><article class="card"><p class="card-titulo"><span class="num">11</span>Respostas prontas para o WhatsApp</p>
+<div class="prompt">Tenho um(a) <span class="var">[TIPO DE NEGÓCIO]</span>.
+Crie 15 respostas curtas e simpáticas para as perguntas mais comuns dos clientes: preço, horário, entrega, formas de pagamento, prazo e troca.
+Tom: próximo e profissional.</div></article><article class="card"><p class="card-titulo"><span class="num">12</span>Descrição de produto que vende</p>
+<div class="prompt">Você é um copywriter de e-commerce.
+Escreva 3 versões de descrição para <span class="var">[PRODUTO]</span>, focando em benefícios (não só características): 1 frase de impacto, 3 tópicos e uma chamada para compra.
+Público: <span class="var">[QUEM COMPRA]</span>.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">07</span></footer></section><section class="pg "><p class="cat-mini">🛍️ Vendas e negócios</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">13</span>Responder cliente bravo</p>
+<div class="prompt">Um cliente mandou esta reclamação: <span class="var">[COLE A MENSAGEM]</span>.
+Escreva uma resposta calma e empática que reconheça o problema, explique o que vamos fazer e ofereça uma solução: <span class="var">[O QUE VOCÊ PODE OFERECER]</span>.
+No máximo 5 linhas.</div></article><article class="card"><p class="card-titulo"><span class="num">14</span>Nome para negócio ou produto</p>
+<div class="prompt">Sugira 20 nomes para um(a) <span class="var">[TIPO DE NEGÓCIO / PRODUTO]</span> que transmita <span class="var">[3 SENSAÇÕES, ex.: confiança, leveza, rapidez]</span>.
+Regras: até 2 palavras, fácil de falar e escrever, sem números.
+Explique em uma linha a ideia de cada um.</div></article><article class="card"><p class="card-titulo"><span class="num">15</span>Análise de concorrente</p>
+<div class="prompt">Vou colar informações públicas de um concorrente (site, Instagram, preços): <span class="var">[COLE AQUI]</span>.
+O meu negócio é: <span class="var">[DESCREVA]</span>.
+Monte uma tabela comparando preço, público, diferenciais e pontos fracos, e me dê 3 oportunidades para eu me destacar.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">08</span></footer></section><section class="pg "><p class="cat-mini">🛍️ Vendas e negócios</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">16</span>Preço de venda</p>
+<div class="prompt">Me ajude a calcular o preço de venda de <span class="var">[PRODUTO / SERVIÇO]</span>.
+Custos: <span class="var">[MATERIAIS, TEMPO, TAXAS, FRETE]</span>. Quero margem de <span class="var">[X]</span>%.
+Mostre o cálculo passo a passo e sugira um preço final com terminação psicológica (ex.: 49,90).</div></article><article class="card"><p class="card-titulo"><span class="num">17</span>Roteiro de atendimento</p>
+<div class="prompt">Crie um roteiro de atendimento para vender <span class="var">[PRODUTO / SERVIÇO]</span> pelo WhatsApp.
+Etapas: saudação, perguntas para entender a necessidade, apresentação da solução, resposta a 3 objeções comuns e fechamento.
+Tom: humano, sem pressão.</div></article><article class="card"><p class="card-titulo"><span class="num">18</span>Promoção com começo, meio e fim</p>
+<div class="prompt">Planeje uma promoção de <span class="var">[X]</span> dias para <span class="var">[NEGÓCIO]</span> com o objetivo de <span class="var">[OBJETIVO, ex.: vender o estoque de inverno]</span>.
+Inclua: nome da campanha, oferta, mensagens para cada dia (stories e WhatsApp) e como criar urgência sem enganar o cliente.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">09</span></footer></section><section class="pg "><p class="cat-mini">🛍️ Vendas e negócios</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">19</span>Pedido de avaliação</p>
+<div class="prompt">Escreva 3 versões curtas de mensagem pedindo para o cliente avaliar meu negócio no <span class="var">[GOOGLE / INSTAGRAM]</span>.
+Negócio: <span class="var">[TIPO]</span>. Envio a mensagem <span class="var">[QUANDO, ex.: 2 dias após a compra]</span>.
+Tom: grato e leve, sem parecer cobrança.</div></article><article class="card"><p class="card-titulo"><span class="num">20</span>Bio do Instagram do negócio</p>
+<div class="prompt">Crie 5 opções de bio de Instagram para <span class="var">[NEGÓCIO]</span> em <span class="var">[CIDADE]</span>.
+Cada uma com: o que vendo, para quem, um diferencial e uma chamada para o link.
+Máximo de 150 caracteres e no máximo 3 emojis.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">10</span></footer></section><section class="pg "><header class="cat"><span class="cat-emoji">📱</span><div><h2 class="h2">Conteúdo e redes sociais<span class="pt"></span></h2><p class="cat-intro">Para postar com constância sem ficar sem ideias.</p></div></header><div class="cards"><article class="card"><p class="card-titulo"><span class="num">21</span>30 ideias de posts</p>
+<div class="prompt">Meu perfil é sobre <span class="var">[TEMA]</span> para <span class="var">[PÚBLICO]</span>.
+Crie 30 ideias de posts divididas em: dicas práticas, erros comuns, bastidores, perguntas do público e ofertas.
+Para cada uma: título e formato (reels, carrossel ou stories).</div></article><article class="card"><p class="card-titulo"><span class="num">22</span>Legenda que gera comentário</p>
+<div class="prompt">Escreva uma legenda de Instagram sobre <span class="var">[ASSUNTO DO POST]</span>.
+Estrutura: primeira linha que prende, 3 a 5 linhas de valor e uma pergunta no final que faça as pessoas comentarem.
+Tom: <span class="var">[DESCONTRAÍDO / PROFISSIONAL]</span>. Até 5 hashtags.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">11</span></footer></section><section class="pg "><p class="cat-mini">📱 Conteúdo e redes sociais</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">23</span>Roteiro de Reels de 30 segundos</p>
+<div class="prompt">Crie um roteiro de Reels de 30 segundos sobre <span class="var">[TEMA]</span>.
+Formato de tabela: tempo, o que eu falo, o que aparece na tela.
+Comece com um gancho forte nos 2 primeiros segundos e termine com uma chamada para salvar.</div></article><article class="card"><p class="card-titulo"><span class="num">24</span>10 ganchos para o mesmo vídeo</p>
+<div class="prompt">Meu vídeo ensina: <span class="var">[ASSUNTO]</span>.
+Escreva 10 ganchos diferentes para os 2 primeiros segundos, usando estilos variados: curiosidade, resultado primeiro, erro comum, pergunta e contraste.
+No máximo 12 palavras cada.</div></article><article class="card"><p class="card-titulo"><span class="num">25</span>Um conteúdo, 5 formatos</p>
+<div class="prompt">Transforme o texto abaixo em: 1 roteiro de Reels, 1 carrossel de 7 lâminas, 3 stories com enquete, 1 post para LinkedIn e 1 mensagem para lista de e-mail.
+Texto original: <span class="var">[COLE AQUI]</span></div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">12</span></footer></section><section class="pg "><p class="cat-mini">📱 Conteúdo e redes sociais</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">26</span>Escrever no seu estilo</p>
+<div class="prompt">Analise os textos abaixo, que foram escritos por mim, e descreva meu estilo: tom, tamanho das frases, palavras que uso e o que nunca faço.
+Depois escreva um post sobre <span class="var">[TEMA]</span> imitando esse estilo.
+Meus textos: <span class="var">[COLE 3 TEXTOS SEUS]</span></div></article><article class="card"><p class="card-titulo"><span class="num">27</span>Calendário de conteúdo</p>
+<div class="prompt">Monte um calendário de conteúdo de 4 semanas para <span class="var">[PERFIL / NEGÓCIO]</span>, postando <span class="var">[X]</span> vezes por semana.
+Equilibre conteúdo para atrair, conteúdo para gerar confiança e conteúdo para vender.
+Responda em tabela: data, formato, tema e objetivo.</div></article><article class="card"><p class="card-titulo"><span class="num">28</span>Imagem com IA (descrição perfeita)</p>
+<div class="prompt">Crie 3 descrições (prompts) para gerar uma imagem de <span class="var">[O QUE VOCÊ QUER]</span>.
+Inclua: estilo (foto, ilustração, 3D), enquadramento, iluminação, cores e clima.
+Escreva uma versão em português e outra em inglês.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">13</span></footer></section><section class="pg "><p class="cat-mini">📱 Conteúdo e redes sociais</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">29</span>Perguntas para os stories</p>
+<div class="prompt">Crie 15 ideias de stories interativos para <span class="var">[PERFIL / NEGÓCIO]</span>: enquetes, caixas de pergunta, quiz e controle deslizante.
+Objetivo: entender melhor meu público e aumentar as respostas.
+Para cada ideia, escreva o texto exato.</div></article><article class="card"><p class="card-titulo"><span class="num">30</span>Responder comentários</p>
+<div class="prompt">Recebi estes comentários no meu post: <span class="var">[COLE OS COMENTÁRIOS]</span>.
+Sugira respostas curtas e simpáticas para cada um.
+Quando for uma dúvida, responda e convide a pessoa para o Direct. Quando for uma crítica, responda com educação.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">14</span></footer></section><section class="pg "><header class="cat"><span class="cat-emoji">📚</span><div><h2 class="h2">Estudos<span class="pt"></span></h2><p class="cat-intro">Para aprender mais rápido e fixar de verdade.</p></div></header><div class="cards"><article class="card"><p class="card-titulo"><span class="num">31</span>Explica como se eu tivesse 12 anos</p>
+<div class="prompt">Explique <span class="var">[ASSUNTO]</span> como se eu tivesse 12 anos, usando uma analogia do dia a dia.
+Depois me faça 5 perguntas para testar se entendi, uma de cada vez, e corrija minhas respostas.</div></article><article class="card"><p class="card-titulo"><span class="num">32</span>Flashcards automáticos</p>
+<div class="prompt">Transforme o conteúdo abaixo em 20 flashcards no formato pergunta e resposta curta.
+Foque nos conceitos que mais caem em prova.
+Conteúdo: <span class="var">[COLE O TEXTO OU ANEXE O MATERIAL]</span></div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">15</span></footer></section><section class="pg "><p class="cat-mini">📚 Estudos</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">33</span>Plano de estudos</p>
+<div class="prompt">Monte um plano de estudos para <span class="var">[PROVA / OBJETIVO]</span> em <span class="var">[X]</span> semanas.
+Tenho <span class="var">[X]</span> horas por dia. As matérias são: <span class="var">[LISTE]</span>.
+Priorize o que mais cai, inclua revisões e um simulado por semana. Responda em tabela.</div></article><article class="card"><p class="card-titulo"><span class="num">34</span>Mapa mental em texto</p>
+<div class="prompt">Crie um mapa mental sobre <span class="var">[ASSUNTO]</span> em formato de tópicos aninhados (tema central, ramos e sub-ramos).
+Máximo de 4 níveis e frases curtas, prontas para eu desenhar ou colar em uma ferramenta de mapa mental.</div></article><article class="card"><p class="card-titulo"><span class="num">35</span>Corretor de redação</p>
+<div class="prompt">Você é um corretor de redação do <span class="var">[ENEM / VESTIBULAR / CONCURSO]</span>.
+Avalie minha redação pelos critérios oficiais, dê uma nota estimada para cada critério e aponte os 3 ajustes que mais aumentariam minha nota.
+Redação: <span class="var">[COLE AQUI]</span></div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">16</span></footer></section><section class="pg "><p class="cat-mini">📚 Estudos</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">36</span>Professor particular de idioma</p>
+<div class="prompt">Converse comigo em <span class="var">[IDIOMA]</span> sobre <span class="var">[TEMA DO DIA A DIA]</span>, no nível <span class="var">[INICIANTE / INTERMEDIÁRIO]</span>.
+Use frases simples. Quando eu errar, me corrija no final de cada resposta, explicando o erro em português.</div></article><article class="card"><p class="card-titulo"><span class="num">37</span>Simulado com correção</p>
+<div class="prompt">Crie um simulado de 10 questões de múltipla escolha sobre <span class="var">[ASSUNTO]</span>, no estilo da prova <span class="var">[NOME DA PROVA]</span>.
+Mostre uma questão por vez e espere minha resposta.
+No final, mostre o gabarito comentado e o que devo revisar.</div></article><article class="card"><p class="card-titulo"><span class="num">38</span>Resumo de livro aplicado</p>
+<div class="prompt">Resuma as ideias principais do livro <span class="var">[NOME DO LIVRO]</span> em 10 tópicos.
+Para cada ideia, dê um exemplo de como aplicar na vida de <span class="var">[SUA PROFISSÃO / SITUAÇÃO]</span>.
+Se não tiver certeza de algum ponto do livro, avise.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">17</span></footer></section><section class="pg "><p class="cat-mini">📚 Estudos</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">39</span>Tirar dúvida sem dar a resposta</p>
+<div class="prompt">Estou com dificuldade neste exercício: <span class="var">[COLE O EXERCÍCIO]</span>.
+Não me dê a resposta. Me guie com perguntas e dicas, um passo por vez, até eu chegar à solução sozinho.</div></article><article class="card"><p class="card-titulo"><span class="num">40</span>Aprender qualquer habilidade</p>
+<div class="prompt">Quero aprender <span class="var">[HABILIDADE]</span> do zero e tenho <span class="var">[X]</span> minutos por dia.
+Crie um plano de 30 dias com uma pequena tarefa prática por dia, os erros mais comuns de iniciantes e como saber que estou evoluindo.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">18</span></footer></section><section class="pg "><header class="cat"><span class="cat-emoji">🏡</span><div><h2 class="h2">Vida pessoal<span class="pt"></span></h2><p class="cat-intro">Para organizar a casa, o dinheiro e o tempo livre.</p></div></header><div class="cards"><article class="card"><p class="card-titulo"><span class="num">41</span>Cardápio da semana + lista de mercado</p>
+<div class="prompt">Monte um cardápio de <span class="var">[X]</span> refeições por dia para 7 dias, para <span class="var">[NÚMERO]</span> pessoas.
+Restrições: <span class="var">[EX.: VEGETARIANO, SEM LACTOSE]</span>. Orçamento: R$ <span class="var">[VALOR]</span> por semana.
+No final, gere a lista de mercado agrupada por seção.</div></article><article class="card"><p class="card-titulo"><span class="num">42</span>O que cozinhar com o que tenho</p>
+<div class="prompt">Tenho em casa: <span class="var">[LISTE OS INGREDIENTES]</span>.
+Sugira 5 receitas que usam principalmente esses ingredientes, com tempo de preparo e nível de dificuldade.
+Detalhe o passo a passo da mais rápida.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">19</span></footer></section><section class="pg "><p class="cat-mini">🏡 Vida pessoal</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">43</span>Viagem completa</p>
+<div class="prompt">Planeje uma viagem de <span class="var">[X]</span> dias para <span class="var">[DESTINO]</span> em <span class="var">[MÊS]</span>, para <span class="var">[QUEM VAI]</span>.
+Orçamento total: R$ <span class="var">[VALOR]</span>. Gostamos de <span class="var">[INTERESSES]</span>.
+Monte o roteiro dia a dia com sugestões de passeios e uma estimativa de gastos. Avise o que eu devo confirmar antes de reservar.</div></article><article class="card"><p class="card-titulo"><span class="num">44</span>Organizar as finanças</p>
+<div class="prompt">Minha renda mensal é R$ <span class="var">[VALOR]</span>. Meus gastos fixos: <span class="var">[LISTE]</span>. Meus gastos variáveis: <span class="var">[LISTE]</span>.
+Monte um orçamento mensal em tabela, mostre onde posso economizar e sugira uma meta de reserva de emergência realista.</div></article><article class="card"><p class="card-titulo"><span class="num">45</span>Treino em casa</p>
+<div class="prompt">Crie um treino de <span class="var">[X]</span> minutos para fazer em casa, sem equipamentos, para alguém <span class="var">[INICIANTE / INTERMEDIÁRIO]</span>.
+Objetivo: <span class="var">[OBJETIVO]</span>. Inclua aquecimento, exercícios com repetições e alongamento.
+Lembrete: em caso de dor ou condição de saúde, consulte um profissional.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">20</span></footer></section><section class="pg "><p class="cat-mini">🏡 Vida pessoal</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">46</span>Mensagem especial</p>
+<div class="prompt">Escreva uma mensagem de <span class="var">[ANIVERSÁRIO / AGRADECIMENTO / DESPEDIDA]</span> para <span class="var">[QUEM É A PESSOA E SUA RELAÇÃO COM ELA]</span>.
+Use estes detalhes reais: <span class="var">[2 OU 3 LEMBRANÇAS OU CARACTERÍSTICAS]</span>.
+Tom: <span class="var">[EMOCIONANTE / ENGRAÇADO]</span>. No máximo 6 linhas.</div></article><article class="card"><p class="card-titulo"><span class="num">47</span>Planejar uma festa</p>
+<div class="prompt">Planeje uma festa de <span class="var">[TIPO]</span> para <span class="var">[NÚMERO]</span> pessoas, com orçamento de R$ <span class="var">[VALOR]</span>.
+Monte: checklist com prazos, cardápio com quantidades por pessoa, ideias de decoração simples e um cronograma do dia.</div></article><article class="card"><p class="card-titulo"><span class="num">48</span>Rotina da casa</p>
+<div class="prompt">Moro com <span class="var">[QUEM]</span> em um(a) <span class="var">[CASA / APARTAMENTO]</span> de <span class="var">[X]</span> cômodos.
+Crie uma rotina de limpeza e organização dividida em tarefas diárias, semanais e mensais, distribuídas de forma justa entre os moradores. Responda em tabela.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">21</span></footer></section><section class="pg "><p class="cat-mini">🏡 Vida pessoal</p><div class="cards"><article class="card"><p class="card-titulo"><span class="num">49</span>Decisão difícil</p>
+<div class="prompt">Estou em dúvida entre <span class="var">[OPÇÃO A]</span> e <span class="var">[OPÇÃO B]</span>.
+Contexto: <span class="var">[EXPLIQUE A SITUAÇÃO]</span>.
+Monte uma tabela de prós e contras, me faça 5 perguntas que me ajudem a decidir e, por fim, diga o que você consideraria no meu lugar.</div></article><article class="card"><p class="card-titulo"><span class="num">50</span>Presente certeiro</p>
+<div class="prompt">Sugira 10 ideias de presente para <span class="var">[QUEM É A PESSOA]</span>, que gosta de <span class="var">[GOSTOS E HOBBIES]</span>, até R$ <span class="var">[VALOR]</span>.
+Misture presentes físicos, experiências e opções feitas à mão.
+Explique em uma linha por que cada um combina com a pessoa.</div></article></div><footer><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span><span class="pag">22</span></footer></section><section class="pg final sem-rodape">
+<div class="fim">
+  <h2 class="fim-titulo">Funcionou pra você?</h2>
+  <p class="fim-texto">Me conta qual prompt você usou primeiro. Eu leio todas as mensagens no Direct.</p>
+  <ul class="fim-lista">
+    <li>Todo dia tem tutorial novo de IA no perfil</li>
+    <li>Salve este PDF para consultar sempre que precisar</li>
+    <li>Mande para alguém que ainda sofre com o ChatGPT</li>
+  </ul>
+  <p class="fim-assinatura">Siga a <b>IA Works</b> no Instagram</p>
+  <div class="fim-logo"><span class="logo"><span class="ia">IA</span>works<span class="pt"></span></span></div>
+  <p class="fim-slogan">IA que funciona.</p>
+</div>
+</section></body></html>

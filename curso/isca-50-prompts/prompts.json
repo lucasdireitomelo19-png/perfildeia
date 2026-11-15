@@ -1,0 +1,89 @@
+{
+  "categorias": [
+    {
+      "nome": "Trabalho",
+      "emoji": "💼",
+      "intro": "Para escrever melhor, resumir mais rápido e organizar o dia.",
+      "prompts": [
+        {"titulo": "E-mail difícil, do jeito certo", "texto": "Você é um especialista em comunicação profissional.\nReescreva o e-mail abaixo para ficar educado, firme e com no máximo 6 linhas.\nObjetivo: [O QUE VOCÊ QUER CONSEGUIR].\nE-mail original: [COLE AQUI]"},
+        {"titulo": "Resumo de documento longo", "texto": "Resuma o documento abaixo em 10 tópicos curtos.\nDepois liste: 3 pontos de atenção, prazos e valores citados, e as decisões que eu preciso tomar.\nDocumento: [COLE O TEXTO OU ANEXE O ARQUIVO]"},
+        {"titulo": "Reunião vira lista de tarefas", "texto": "Abaixo estão minhas anotações (ou a transcrição) de uma reunião.\nTransforme em: resumo de 5 linhas, decisões tomadas e tabela de tarefas com responsável e prazo.\nAnotações: [COLE AQUI]"},
+        {"titulo": "Fórmula de planilha sem saber fórmula", "texto": "Estou usando [EXCEL / GOOGLE PLANILHAS].\nNa coluna [A] tenho [DESCREVA OS DADOS] e quero [O QUE VOCÊ QUER CALCULAR].\nMe dê a fórmula pronta e explique em 2 linhas como ela funciona."},
+        {"titulo": "Apresentação em minutos", "texto": "Crie a estrutura de uma apresentação de [NÚMERO] slides sobre [TEMA] para [PÚBLICO].\nPara cada slide: título, 3 tópicos curtos e uma sugestão de imagem.\nTom: [FORMAL / DESCONTRAÍDO]."},
+        {"titulo": "Currículo que passa no filtro", "texto": "Você é um recrutador sênior.\nReescreva minhas experiências como um currículo de 1 página para a vaga de [VAGA]: resumo de 3 linhas, conquistas com números e palavras-chave da área.\nMinhas experiências: [COLE AQUI]"},
+        {"titulo": "Treino de entrevista", "texto": "Simule uma entrevista de emprego para a vaga de [VAGA] na área de [ÁREA].\nFaça uma pergunta por vez e espere minha resposta.\nDepois de cada resposta, me dê uma nota de 0 a 10 e uma dica para melhorar."},
+        {"titulo": "Organizar a semana", "texto": "Esta é minha lista de tarefas da semana, bagunçada: [COLE A LISTA].\nTenho [X] horas livres por dia.\nOrganize por prioridade (urgente e importante primeiro) e distribua de segunda a sexta em uma tabela."},
+        {"titulo": "Pedido de aumento", "texto": "Me ajude a preparar uma conversa para pedir aumento.\nCargo: [CARGO]. Tempo de empresa: [TEMPO]. Minhas entregas: [LISTE].\nCrie um roteiro curto com abertura, argumentos com dados e respostas para 3 objeções prováveis do meu chefe."},
+        {"titulo": "Mensagem clara para a equipe", "texto": "Transforme a informação abaixo em uma mensagem curta e clara para a equipe no [WHATSAPP / E-MAIL / SLACK].\nComece pelo mais importante, use tópicos e termine com o próximo passo.\nInformação: [COLE AQUI]"}
+      ]
+    },
+    {
+      "nome": "Vendas e negócios",
+      "emoji": "🛍️",
+      "intro": "Para atender, vender e divulgar sem passar o dia no celular.",
+      "prompts": [
+        {"titulo": "Respostas prontas para o WhatsApp", "texto": "Tenho um(a) [TIPO DE NEGÓCIO].\nCrie 15 respostas curtas e simpáticas para as perguntas mais comuns dos clientes: preço, horário, entrega, formas de pagamento, prazo e troca.\nTom: próximo e profissional."},
+        {"titulo": "Descrição de produto que vende", "texto": "Você é um copywriter de e-commerce.\nEscreva 3 versões de descrição para [PRODUTO], focando em benefícios (não só características): 1 frase de impacto, 3 tópicos e uma chamada para compra.\nPúblico: [QUEM COMPRA]."},
+        {"titulo": "Responder cliente bravo", "texto": "Um cliente mandou esta reclamação: [COLE A MENSAGEM].\nEscreva uma resposta calma e empática que reconheça o problema, explique o que vamos fazer e ofereça uma solução: [O QUE VOCÊ PODE OFERECER].\nNo máximo 5 linhas."},
+        {"titulo": "Nome para negócio ou produto", "texto": "Sugira 20 nomes para um(a) [TIPO DE NEGÓCIO / PRODUTO] que transmita [3 SENSAÇÕES, ex.: confiança, leveza, rapidez].\nRegras: até 2 palavras, fácil de falar e escrever, sem números.\nExplique em uma linha a ideia de cada um."},
+        {"titulo": "Análise de concorrente", "texto": "Vou colar informações públicas de um concorrente (site, Instagram, preços): [COLE AQUI].\nO meu negócio é: [DESCREVA].\nMonte uma tabela comparando preço, público, diferenciais e pontos fracos, e me dê 3 oportunidades para eu me destacar."},
+        {"titulo": "Preço de venda", "texto": "Me ajude a calcular o preço de venda de [PRODUTO / SERVIÇO].\nCustos: [MATERIAIS, TEMPO, TAXAS, FRETE]. Quero margem de [X]%.\nMostre o cálculo passo a passo e sugira um preço final com terminação psicológica (ex.: 49,90)."},
+        {"titulo": "Roteiro de atendimento", "texto": "Crie um roteiro de atendimento para vender [PRODUTO / SERVIÇO] pelo WhatsApp.\nEtapas: saudação, perguntas para entender a necessidade, apresentação da solução, resposta a 3 objeções comuns e fechamento.\nTom: humano, sem pressão."},
+        {"titulo": "Promoção com começo, meio e fim", "texto": "Planeje uma promoção de [X] dias para [NEGÓCIO] com o objetivo de [OBJETIVO, ex.: vender o estoque de inverno].\nInclua: nome da campanha, oferta, mensagens para cada dia (stories e WhatsApp) e como criar urgência sem enganar o cliente."},
+        {"titulo": "Pedido de avaliação", "texto": "Escreva 3 versões curtas de mensagem pedindo para o cliente avaliar meu negócio no [GOOGLE / INSTAGRAM].\nNegócio: [TIPO]. Envio a mensagem [QUANDO, ex.: 2 dias após a compra].\nTom: grato e leve, sem parecer cobrança."},
+        {"titulo": "Bio do Instagram do negócio", "texto": "Crie 5 opções de bio de Instagram para [NEGÓCIO] em [CIDADE].\nCada uma com: o que vendo, para quem, um diferencial e uma chamada para o link.\nMáximo de 150 caracteres e no máximo 3 emojis."}
+      ]
+    },
+    {
+      "nome": "Conteúdo e redes sociais",
+      "emoji": "📱",
+      "intro": "Para postar com constância sem ficar sem ideias.",
+      "prompts": [
+        {"titulo": "30 ideias de posts", "texto": "Meu perfil é sobre [TEMA] para [PÚBLICO].\nCrie 30 ideias de posts divididas em: dicas práticas, erros comuns, bastidores, perguntas do público e ofertas.\nPara cada uma: título e formato (reels, carrossel ou stories)."},
+        {"titulo": "Legenda que gera comentário", "texto": "Escreva uma legenda de Instagram sobre [ASSUNTO DO POST].\nEstrutura: primeira linha que prende, 3 a 5 linhas de valor e uma pergunta no final que faça as pessoas comentarem.\nTom: [DESCONTRAÍDO / PROFISSIONAL]. Até 5 hashtags."},
+        {"titulo": "Roteiro de Reels de 30 segundos", "texto": "Crie um roteiro de Reels de 30 segundos sobre [TEMA].\nFormato de tabela: tempo, o que eu falo, o que aparece na tela.\nComece com um gancho forte nos 2 primeiros segundos e termine com uma chamada para salvar."},
+        {"titulo": "10 ganchos para o mesmo vídeo", "texto": "Meu vídeo ensina: [ASSUNTO].\nEscreva 10 ganchos diferentes para os 2 primeiros segundos, usando estilos variados: curiosidade, resultado primeiro, erro comum, pergunta e contraste.\nNo máximo 12 palavras cada."},
+        {"titulo": "Um conteúdo, 5 formatos", "texto": "Transforme o texto abaixo em: 1 roteiro de Reels, 1 carrossel de 7 lâminas, 3 stories com enquete, 1 post para LinkedIn e 1 mensagem para lista de e-mail.\nTexto original: [COLE AQUI]"},
+        {"titulo": "Escrever no seu estilo", "texto": "Analise os textos abaixo, que foram escritos por mim, e descreva meu estilo: tom, tamanho das frases, palavras que uso e o que nunca faço.\nDepois escreva um post sobre [TEMA] imitando esse estilo.\nMeus textos: [COLE 3 TEXTOS SEUS]"},
+        {"titulo": "Calendário de conteúdo", "texto": "Monte um calendário de conteúdo de 4 semanas para [PERFIL / NEGÓCIO], postando [X] vezes por semana.\nEquilibre conteúdo para atrair, conteúdo para gerar confiança e conteúdo para vender.\nResponda em tabela: data, formato, tema e objetivo."},
+        {"titulo": "Imagem com IA (descrição perfeita)", "texto": "Crie 3 descrições (prompts) para gerar uma imagem de [O QUE VOCÊ QUER].\nInclua: estilo (foto, ilustração, 3D), enquadramento, iluminação, cores e clima.\nEscreva uma versão em português e outra em inglês."},
+        {"titulo": "Perguntas para os stories", "texto": "Crie 15 ideias de stories interativos para [PERFIL / NEGÓCIO]: enquetes, caixas de pergunta, quiz e controle deslizante.\nObjetivo: entender melhor meu público e aumentar as respostas.\nPara cada ideia, escreva o texto exato."},
+        {"titulo": "Responder comentários", "texto": "Recebi estes comentários no meu post: [COLE OS COMENTÁRIOS].\nSugira respostas curtas e simpáticas para cada um.\nQuando for uma dúvida, responda e convide a pessoa para o Direct. Quando for uma crítica, responda com educação."}
+      ]
+    },
+    {
+      "nome": "Estudos",
+      "emoji": "📚",
+      "intro": "Para aprender mais rápido e fixar de verdade.",
+      "prompts": [
+        {"titulo": "Explica como se eu tivesse 12 anos", "texto": "Explique [ASSUNTO] como se eu tivesse 12 anos, usando uma analogia do dia a dia.\nDepois me faça 5 perguntas para testar se entendi, uma de cada vez, e corrija minhas respostas."},
+        {"titulo": "Flashcards automáticos", "texto": "Transforme o conteúdo abaixo em 20 flashcards no formato pergunta e resposta curta.\nFoque nos conceitos que mais caem em prova.\nConteúdo: [COLE O TEXTO OU ANEXE O MATERIAL]"},
+        {"titulo": "Plano de estudos", "texto": "Monte um plano de estudos para [PROVA / OBJETIVO] em [X] semanas.\nTenho [X] horas por dia. As matérias são: [LISTE].\nPriorize o que mais cai, inclua revisões e um simulado por semana. Responda em tabela."},
+        {"titulo": "Mapa mental em texto", "texto": "Crie um mapa mental sobre [ASSUNTO] em formato de tópicos aninhados (tema central, ramos e sub-ramos).\nMáximo de 4 níveis e frases curtas, prontas para eu desenhar ou colar em uma ferramenta de mapa mental."},
+        {"titulo": "Corretor de redação", "texto": "Você é um corretor de redação do [ENEM / VESTIBULAR / CONCURSO].\nAvalie minha redação pelos critérios oficiais, dê uma nota estimada para cada critério e aponte os 3 ajustes que mais aumentariam minha nota.\nRedação: [COLE AQUI]"},
+        {"titulo": "Professor particular de idioma", "texto": "Converse comigo em [IDIOMA] sobre [TEMA DO DIA A DIA], no nível [INICIANTE / INTERMEDIÁRIO].\nUse frases simples. Quando eu errar, me corrija no final de cada resposta, explicando o erro em português."},
+        {"titulo": "Simulado com correção", "texto": "Crie um simulado de 10 questões de múltipla escolha sobre [ASSUNTO], no estilo da prova [NOME DA PROVA].\nMostre uma questão por vez e espere minha resposta.\nNo final, mostre o gabarito comentado e o que devo revisar."},
+        {"titulo": "Resumo de livro aplicado", "texto": "Resuma as ideias principais do livro [NOME DO LIVRO] em 10 tópicos.\nPara cada ideia, dê um exemplo de como aplicar na vida de [SUA PROFISSÃO / SITUAÇÃO].\nSe não tiver certeza de algum ponto do livro, avise."},
+        {"titulo": "Tirar dúvida sem dar a resposta", "texto": "Estou com dificuldade neste exercício: [COLE O EXERCÍCIO].\nNão me dê a resposta. Me guie com perguntas e dicas, um passo por vez, até eu chegar à solução sozinho."},
+        {"titulo": "Aprender qualquer habilidade", "texto": "Quero aprender [HABILIDADE] do zero e tenho [X] minutos por dia.\nCrie um plano de 30 dias com uma pequena tarefa prática por dia, os erros mais comuns de iniciantes e como saber que estou evoluindo."}
+      ]
+    },
+    {
+      "nome": "Vida pessoal",
+      "emoji": "🏡",
+      "intro": "Para organizar a casa, o dinheiro e o tempo livre.",
+      "prompts": [
+        {"titulo": "Cardápio da semana + lista de mercado", "texto": "Monte um cardápio de [X] refeições por dia para 7 dias, para [NÚMERO] pessoas.\nRestrições: [EX.: VEGETARIANO, SEM LACTOSE]. Orçamento: R$ [VALOR] por semana.\nNo final, gere a lista de mercado agrupada por seção."},
+        {"titulo": "O que cozinhar com o que tenho", "texto": "Tenho em casa: [LISTE OS INGREDIENTES].\nSugira 5 receitas que usam principalmente esses ingredientes, com tempo de preparo e nível de dificuldade.\nDetalhe o passo a passo da mais rápida."},
+        {"titulo": "Viagem completa", "texto": "Planeje uma viagem de [X] dias para [DESTINO] em [MÊS], para [QUEM VAI].\nOrçamento total: R$ [VALOR]. Gostamos de [INTERESSES].\nMonte o roteiro dia a dia com sugestões de passeios e uma estimativa de gastos. Avise o que eu devo confirmar antes de reservar."},
+        {"titulo": "Organizar as finanças", "texto": "Minha renda mensal é R$ [VALOR]. Meus gastos fixos: [LISTE]. Meus gastos variáveis: [LISTE].\nMonte um orçamento mensal em tabela, mostre onde posso economizar e sugira uma meta de reserva de emergência realista."},
+        {"titulo": "Treino em casa", "texto": "Crie um treino de [X] minutos para fazer em casa, sem equipamentos, para alguém [INICIANTE / INTERMEDIÁRIO].\nObjetivo: [OBJETIVO]. Inclua aquecimento, exercícios com repetições e alongamento.\nLembrete: em caso de dor ou condição de saúde, consulte um profissional."},
+        {"titulo": "Mensagem especial", "texto": "Escreva uma mensagem de [ANIVERSÁRIO / AGRADECIMENTO / DESPEDIDA] para [QUEM É A PESSOA E SUA RELAÇÃO COM ELA].\nUse estes detalhes reais: [2 OU 3 LEMBRANÇAS OU CARACTERÍSTICAS].\nTom: [EMOCIONANTE / ENGRAÇADO]. No máximo 6 linhas."},
+        {"titulo": "Planejar uma festa", "texto": "Planeje uma festa de [TIPO] para [NÚMERO] pessoas, com orçamento de R$ [VALOR].\nMonte: checklist com prazos, cardápio com quantidades por pessoa, ideias de decoração simples e um cronograma do dia."},
+        {"titulo": "Rotina da casa", "texto": "Moro com [QUEM] em um(a) [CASA / APARTAMENTO] de [X] cômodos.\nCrie uma rotina de limpeza e organização dividida em tarefas diárias, semanais e mensais, distribuídas de forma justa entre os moradores. Responda em tabela."},
+        {"titulo": "Decisão difícil", "texto": "Estou em dúvida entre [OPÇÃO A] e [OPÇÃO B].\nContexto: [EXPLIQUE A SITUAÇÃO].\nMonte uma tabela de prós e contras, me faça 5 perguntas que me ajudem a decidir e, por fim, diga o que você consideraria no meu lugar."},
+        {"titulo": "Presente certeiro", "texto": "Sugira 10 ideias de presente para [QUEM É A PESSOA], que gosta de [GOSTOS E HOBBIES], até R$ [VALOR].\nMisture presentes físicos, experiências e opções feitas à mão.\nExplique em uma linha por que cada um combina com a pessoa."}
+      ]
+    }
+  ]
+}

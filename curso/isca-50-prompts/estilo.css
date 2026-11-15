@@ -1,0 +1,72 @@
+@font-face { font-family: "Space Grotesk"; font-weight: 500; src: url("../../marca/fontes/space-grotesk-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-weight: 700; src: url("../../marca/fontes/space-grotesk-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; src: url("../../marca/fontes/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; src: url("../../marca/fontes/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("../../marca/fontes/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 500; src: url("../../marca/fontes/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+
+:root { --off:#F7F6F2; --branco:#FFFFFF; --ink:#14161A; --azul:#2F3BFF; --verde:#D4F542; --cinza:#6B7079; --prompt-bg:#EEF0F5; }
+@page { size: 1080px 1350px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.pg { width: 1080px; height: 1350px; position: relative; overflow: hidden; background: var(--off);
+  padding: 90px 90px 140px; display: flex; flex-direction: column; gap: 34px; page-break-after: always; }
+footer { position: absolute; left: 90px; right: 90px; bottom: 56px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: "Space Grotesk"; font-weight: 700; font-size: 30px; letter-spacing: -0.02em; }
+.logo .ia { color: var(--azul); }
+.pt::after { content: ""; display: inline-block; width: .13em; height: .13em; background: var(--azul); margin-left: .04em; }
+.pag { font-family: "JetBrains Mono"; font-weight: 500; font-size: 24px; color: var(--cinza); }
+
+.tag { align-self: flex-start; font-family: "JetBrains Mono"; font-weight: 500; font-size: 24px; letter-spacing: .06em;
+  border: 3px solid var(--azul); color: var(--azul); border-radius: 999px; padding: 8px 24px; }
+.h2 { font-family: "Space Grotesk"; font-weight: 700; font-size: 72px; line-height: 1.02; letter-spacing: -0.03em; }
+.mt { background: linear-gradient(transparent 55%, var(--verde) 55%, var(--verde) 92%, transparent 92%); padding: 0 .06em; }
+.var { color: var(--azul); }
+
+/* Capa */
+.capa { justify-content: center; gap: 44px; }
+.capa-titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 132px; line-height: .98; letter-spacing: -0.04em; }
+.capa-sub { font-size: 40px; line-height: 1.35; color: var(--cinza); max-width: 860px; }
+.capa-lista { list-style: none; display: flex; flex-wrap: wrap; gap: 14px; }
+.capa-lista li { background: var(--branco); border-radius: 999px; padding: 14px 26px; font-size: 28px; font-weight: 500; }
+.capa-logo { position: absolute; left: 90px; bottom: 70px; }
+.capa-logo .logo { font-size: 46px; }
+
+/* Como usar */
+.passos { list-style: none; counter-reset: p; display: flex; flex-direction: column; gap: 22px; }
+.passos li { counter-increment: p; position: relative; padding-left: 78px; font-size: 31px; line-height: 1.38; }
+.passos li::before { content: counter(p); position: absolute; left: 0; top: 0; width: 54px; height: 54px; background: var(--azul); color: #fff;
+  font-family: "Space Grotesk"; font-weight: 700; font-size: 30px; display: flex; align-items: center; justify-content: center; }
+.ptcf { background: var(--branco); border-radius: 28px; padding: 40px; margin-top: 10px; }
+.ptcf-titulo { font-size: 32px; margin-bottom: 26px; }
+.ptcf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.ptcf-grid div { background: var(--off); border-radius: 18px; padding: 24px; font-family: "Space Grotesk"; font-weight: 500; font-size: 34px; }
+.ptcf-grid b { color: var(--azul); font-weight: 700; }
+.ptcf-grid span { font-family: "Inter"; font-size: 24px; color: var(--cinza); }
+
+/* Categorias */
+.cat { display: flex; gap: 28px; align-items: center; }
+.cat-emoji { width: 120px; height: 120px; flex: none; background: var(--branco); border-radius: 28px; display: flex; align-items: center; justify-content: center; font-size: 64px; }
+.cat-intro { font-size: 28px; color: var(--cinza); margin-top: 8px; }
+.cat-mini { font-family: "Space Grotesk"; font-weight: 700; font-size: 30px; color: var(--cinza); }
+.cards { display: flex; flex-direction: column; gap: 20px; }
+.card { background: var(--branco); border-radius: 24px; padding: 24px 30px; }
+.card-titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 32px; letter-spacing: -0.01em; margin-bottom: 16px; display: flex; gap: 16px; align-items: baseline; }
+.num { font-family: "JetBrains Mono"; font-weight: 500; font-size: 24px; color: var(--azul); }
+.prompt { background: var(--prompt-bg); border-radius: 16px; padding: 22px 26px; font-family: "JetBrains Mono"; font-weight: 500;
+  font-size: 22.5px; line-height: 1.5; white-space: pre-wrap; }
+
+/* Final */
+.final { background: var(--azul); color: #fff; justify-content: center; }
+.fim { display: flex; flex-direction: column; gap: 36px; }
+.fim-titulo { font-family: "Space Grotesk"; font-weight: 700; font-size: 110px; line-height: 1; letter-spacing: -0.04em; }
+.fim-titulo .pt::after, .fim-logo .pt::after { background: var(--verde); }
+.fim-texto { font-size: 38px; line-height: 1.35; opacity: .9; }
+.fim-lista { list-style: none; display: flex; flex-direction: column; gap: 18px; }
+.fim-lista li { font-size: 32px; padding-left: 44px; position: relative; }
+.fim-lista li::before { content: ""; position: absolute; left: 0; top: .4em; width: 18px; height: 18px; background: var(--verde); }
+.fim-assinatura { font-size: 30px; opacity: .85; margin-top: 30px; }
+.fim-logo .logo { font-size: 72px; color: #fff; }
+.fim-logo .logo .ia { color: #fff; }
+.fim-slogan { font-family: "Space Grotesk"; font-weight: 500; font-size: 34px; }

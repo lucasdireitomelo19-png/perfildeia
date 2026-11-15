@@ -21,6 +21,7 @@ etapa**: cada agente lê do repositório o que precisa, então não depende do h
 | `/roteirizar` | roteirista | Roteiro de Reels ou carrossel | `/roteirizar P001` |
 | `/video` | produtor-video | Narração ElevenLabs + gravações + edição CapCut + capa | `/video P001` |
 | `/carrossel` | designer-carrossel | Lâminas PNG prontas para postar | `/carrossel P002` |
+| `/site` | criador-sites | Landing pages: link na bio, captura, vendas | `/site captura dos 50 prompts` |
 | `/produzir` | todos, em sequência | Do tema ao conteúdo pronto | `/produzir como fazer logo com IA` |
 
 Você também pode chamar um agente pelo nome, sem comando: *"use o roteirista na P004"*.

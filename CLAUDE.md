@@ -35,6 +35,7 @@ pesquisador-nicho → roteirista → produtor-video     (Reels)
 | 2 | `roteirista` | pesquisa da pauta | `producao/02-roteiros/<ID>-<slug>.md` |
 | 3a | `produtor-video` | roteiro de Reels | `producao/03-videos/<ID>-<slug>/` |
 | 3b | `designer-carrossel` | roteiro de carrossel | `producao/04-carrosseis/<ID>-<slug>/` |
+| (apoio) | `criador-sites` | marca + curso + pedidos dos outros agentes | `sites/<pagina>/` |
 
 ### Regras de integração (valem para TODOS os agentes)
 1. **`producao/PAUTA.md` é a fonte da verdade.** Cada pauta tem um **ID** (`P001`, `P002`...) que acompanha todos os arquivos dela.

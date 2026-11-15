@@ -1,5 +1,8 @@
 # Isca digital: "50 Prompts que Funcionam"
 
+**✅ PRONTO:** `curso/isca-50-prompts/50-prompts-que-funcionam.pdf` (23 páginas, formato celular 4:5).
+Para editar: altere `prompts.json` e rode `python3 curso/isca-50-prompts/build.py` + `node ferramentas/render-pdf.js curso/isca-50-prompts/isca.html curso/isca-50-prompts/50-prompts-que-funcionam.pdf`.
+
 **Formato:** PDF de 15–20 páginas no visual claro da marca (ou página Notion pública).
 **Entrega:** ManyChat no Direct (palavra-chave "PROMPTS") + página de captura no link da bio.
 **Captura:** nome + e-mail + WhatsApp (opcional). Ferramentas: MailerLite/Brevo (grátis no início).
