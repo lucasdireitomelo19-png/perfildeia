@@ -48,10 +48,10 @@ Nome do perfil (campo nome, que é pesquisável): **`Faz com IA | Tutoriais de I
 A palavra "IA" no nome faz o perfil aparecer na busca.
 
 **Como compensar a falta de rosto (confiança é o maior desafio do dark):**
-- **Voz consistente:** use sempre a mesma voz de IA (ElevenLabs ou similar) ou sua
-  própria voz sem aparecer. A voz vira a "cara" da marca.
+- **Voz consistente:** sempre a mesma voz do ElevenLabs (configuração em
+  `02-identidade-visual.md`). A voz vira a "cara" da marca.
 - **Mãos e tela:** grave a tela do celular/PC e, se quiser, só as mãos digitando.
-- **Mascote/avatar opcional:** um personagem fixo (ex.: um robô minimalista verde)
+- **Mascote/avatar opcional:** um personagem fixo (ex.: um robô minimalista azul)
   que aparece na foto de perfil e nas capas.
 - **Prova pelo resultado:** mostre sempre o antes x depois na tela. No dark, o
   resultado é a prova.

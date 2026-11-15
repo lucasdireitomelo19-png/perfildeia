@@ -20,7 +20,7 @@ no trabalho, no seu negócio e na vida, mesmo sem saber nada de tecnologia."*
 **Para quem é:** iniciantes e intermediários, profissionais e pequenos empreendedores.
 **Para quem não é:** programadores que querem treinar modelos.
 
-**Formato (100% sem rosto):** aulas gravadas com tela + narração, de 5–15 min cada,
+**Formato (100% sem rosto):** aulas gravadas com tela + narração na voz ElevenLabs da marca, de 5–15 min cada,
 com material de apoio. Hospedagem: Hotmart, Kiwify ou Eduzz (cuidam de pagamento,
 área de membros, afiliados e nota).
 
@@ -74,7 +74,7 @@ com material de apoio. Hospedagem: Hotmart, Kiwify ou Eduzz (cuidam de pagamento
 ### Bônus (aumentam a percepção de valor)
 1. Biblioteca de 500+ prompts organizados por área (Notion)
 2. Guia atualizado de ferramentas (grátis x pagas)
-3. Templates Canva da identidade "dark" para quem quer criar conteúdo
+3. Templates Canva no visual da marca para quem quer criar conteúdo
 4. Atualizações mensais: 1 aula nova por mês com novidades de IA (justifica o preço e
    resolve o problema "IA muda muito rápido")
 

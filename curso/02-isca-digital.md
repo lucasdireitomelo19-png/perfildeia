@@ -1,6 +1,6 @@
 # Isca digital: "50 Prompts Prontos para Usar Hoje"
 
-**Formato:** PDF de 15–20 páginas no visual dark da marca (ou página Notion pública).
+**Formato:** PDF de 15–20 páginas no visual claro da marca (ou página Notion pública).
 **Entrega:** ManyChat no Direct (palavra-chave "PROMPTS") + página de captura no link da bio.
 **Captura:** nome + e-mail + WhatsApp (opcional). Ferramentas: MailerLite/Brevo (grátis no início).
 
