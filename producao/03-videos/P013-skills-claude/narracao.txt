@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# id: P013 | formato: reels | status: produzido
+# fonte: producao/02-roteiros/P013-skills-claude.md
+# NARRAÇÃO PARA O ELEVENLABS. As linhas com "#" são comentários: NÃO cole no ElevenLabs.
+#
+# CONFIGURAÇÃO (a mesma do P008, não troque a voz):
+#   Voz: Mário (Voice Library, pt-BR, ID YU8EsJtXFMyKMxYtheDk). Nunca clonar
+#        nem imitar a voz de pessoa real ou famosa.
+#   Modelo: eleven_multilingual_v2
+#   Stability: 45% | Similarity: 75% | Style: 10%
+#   Speed: 1.08 (levemente acelerada)
+#
+# COMO GERAR: um bloco por cena (C1 a C8, separados por linha em branco).
+#   Se uma palavra sair errada, regrave só aquele bloco.
+#
+# PRONÚNCIA (trocar só se a voz errar; o ideal é o dicionário de pronúncia):
+#   GitHub -> guít-râb · Claude -> clôd · skill -> skíl · Anthropic -> ân-trópic
+#   Customize -> câs-to-máiz · Create skill -> cri-êit skíl · Upload a skill -> âp-lôud a skíl
+#   "skill" e "zip" estão em minúsculas de propósito: em CAIXA ALTA a voz pode soletrar.
+#   Na tela eles aparecem como SKILL e ZIP.
+#
+# DURAÇÃO ALVO: ~43 s (107 palavras). Teto: 45 s.
+# ---------------------------------------------------------------------------
+
+Esse repositório do GitHub... com mais de cento e noventa mil estrelas... deixa o Claude muito mais inteligente!
+
+São Skills: pastas de instruções que o Claude usa quando precisa. Funciona no plano grátis.
+
+Passo um: nas configurações, liga a execução de código e criação de arquivos.
+
+Passo dois: em Customize, Skills, as da Anthropic já tão lá. É só ligar.
+
+Passo três: pra uma do repositório, compacta a pasta em zip. Clica no mais, Create skill, Upload a skill.
+
+Pronto. Num chat novo, pede uma planilha... e o Claude usa a skill sozinho.
+
+Comenta skill, que eu te mando o link.
+
+Testado e aprovado. IA Works: IA que funciona.
