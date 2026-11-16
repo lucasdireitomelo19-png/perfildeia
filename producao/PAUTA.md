@@ -25,3 +25,7 @@ Pilar: `tutorial` · `prompt` · `descoberta` · `bastidor` · `venda`
 | P017 | Conectar o Claude ao Google Drive e Gmail (Conectores) | reels | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
 | P018 | Projetos com instruções: o Claude que sabe tudo do seu negócio | carrossel | prompt | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
 | P019 | Funciona ou Não? Superpowers, 318 mil estrelas (serve pra você?) | reels | bastidor | 🔎 pesquisado | producao/01-pesquisas/2026-11-15-skills-claude.md | |
+| P020 | Funciona ou Não? Remotion skills: o repositório que ensina o Claude a fazer vídeo | reels | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
+| P021 | ffmpeg-skill: 6 mil estrelas, Claude vira editor de vídeo | reels | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
+| P022 | 3 skills que ensinam o Claude a editar vídeo (e qual serve pra você) | carrossel | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
+| P023 | Bastidor: os Reels deste perfil são editados pelo Claude | reels | bastidor | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
