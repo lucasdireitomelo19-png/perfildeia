@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>P020: capa do Reels (1080×1920)</title>
+<link rel="stylesheet" href="../../../marca/carrossel/base.css">
+<style>
+  /* Kit do carrossel adaptado para 9:16. Área central 4:5 = y 285 a 1635. */
+  body { margin: 0; }
+  .tela { width: 1080px; height: 1920px; position: relative; overflow: hidden; background: var(--off); }
+  .area45 { position: absolute; left: 0; right: 0; top: 285px; height: 1350px; padding: 110px 96px 0; display: flex; flex-direction: column; gap: 44px; }
+  .estrelas { font-family: "Space Grotesk"; font-weight: 700; font-size: 200px; line-height: .95; white-space: nowrap; letter-spacing: -0.04em; color: var(--azul); display: flex; align-items: center; gap: 28px; }
+  .estrela { width: 140px; height: 140px; flex: none; }
+  .titulo--capa { font-size: 124px; }
+  .mini { padding: 30px 36px 36px; display: flex; flex-direction: column; gap: 18px; }
+  .linha { display: flex; align-items: center; justify-content: space-between; background: var(--off); border-radius: 18px; padding: 18px 26px; font-family: "Space Grotesk"; font-weight: 700; font-size: 40px; }
+  .tg { width: 104px; height: 58px; border-radius: 29px; background: var(--azul); position: relative; }
+  .tg i { position: absolute; top: 7px; right: 7px; width: 44px; height: 44px; border-radius: 50%; background: #fff; }
+  .selo { align-self: flex-start; font-family: "Space Grotesk"; font-weight: 700; font-size: 44px; border: 4px solid var(--grafite, #14161A); border-radius: 999px; padding: 10px 30px; background: #fff; }
+  .cmdc { font-family: "JetBrains Mono"; font-weight: 500; font-size: 44px; color: var(--azul); background: #EEF0F5; border-radius: 18px; padding: 26px 28px; }
+  .rodape9 { position: absolute; left: 96px; right: 96px; bottom: 375px; font-family: "Space Grotesk"; font-weight: 700; font-size: 40px; }
+  .rodape9 .ia { color: var(--azul); }
+</style>
+</head>
+<body>
+<section class="tela" id="capa">
+  <div class="area45">
+    <div class="selo">Funciona ou Não?</div>
+    <div class="estrelas">
+      <svg class="estrela" viewBox="0 0 24 24" aria-hidden="true"><path fill="#2F3BFF" d="M12 1.8l3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 17.9l-6.4 3.5 1.4-7.1-5.3-5 7.2-.9z"/></svg>
+      <span>+7 mil</span>
+    </div>
+    <h1 class="titulo titulo--capa">Claude faz <span class="mt">vídeo</span>?</h1>
+    <div class="janela" style="transform: rotate(-2.5deg); margin-top: 10px;">
+      <div class="mini">
+        <div class="cmdc">/remotion:remotion-create</div>
+      </div>
+    </div>
+  </div>
+  <div class="rodape9"><span class="logo"><span class="ia">IA</span>works.</span></div>
+</section>
+</body>
+</html>
