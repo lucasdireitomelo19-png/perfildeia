@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------------------
+# id: P020 | formato: reels | status: produzido
+# fonte: producao/02-roteiros/P020-remotion-skills-video.md
+# NARRAÇÃO PARA O ELEVENLABS. As linhas com "#" são comentários: NÃO cole no ElevenLabs.
+#
+# CONFIGURAÇÃO (a mesma do P008 e do P013, não troque a voz):
+#   Voz: Mário (Voice Library, pt-BR, ID YU8EsJtXFMyKMxYtheDk). Nunca clonar
+#        nem imitar a voz de pessoa real ou famosa.
+#   Modelo: eleven_multilingual_v2
+#   Stability: 45% | Similarity: 75% | Style: 10%
+#   Speed: 1.08 (levemente acelerada)
+#
+# COMO GERAR: um bloco por cena (C1 a C9, separados por linha em branco).
+#   Se uma palavra sair errada, regrave só aquele bloco.
+#
+# PRONÚNCIA (trocar só se a voz errar; o ideal é o dicionário de pronúncia):
+#   GitHub -> guít-râb · Claude -> clôd · Remotion -> ri-mô-xân · Customize -> câs-to-máiz
+#   Discover -> dis-câ-ver · Add -> éd · create -> cri-êit · Pro -> prô
+#   Nos blocos C3 e C7, "Claude" e "Claude Code" estão escritos "Clôd" e "Clôd Côud": com a grafia
+#   normal a voz falou "Cloud" (conferido na transcrição). No C1 e C2 a grafia normal saiu certa.
+#   "vídeo" está em minúsculas no CTA de propósito: em CAIXA ALTA a voz pode soletrar.
+#   Na tela ele aparece como VÍDEO.
+#
+# DURAÇÃO ALVO: ~43 s (107 palavras). Teto: 45 s.
+# ---------------------------------------------------------------------------
+
+Esse repositório do GitHub... com mais de sete mil estrelas... ensina o Claude a fazer vídeo!
+
+Você descreve, o Claude escreve o código no Remotion... e renderiza.
+
+Passo um: no app Clôd do computador, abre Code, Customize, Plugins.
+
+Passo dois: Discover, busca remotion, clica em Add.
+
+Passo três: numa sessão nova, digita barra remotion create... e descreve o vídeo.
+
+Exemplo oficial: vídeo promocional pra uma loja de discos.
+
+Funciona? Funciona. Mas exige o Clôd Côud, do plano Pro. E o Remotion só é grátis pra você, ou empresa de até três pessoas.
+
+Comenta vídeo, que eu te mando o link.
+
+Testado e aprovado. IA Works: IA que funciona.
