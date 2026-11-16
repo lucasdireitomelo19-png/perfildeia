@@ -59,3 +59,11 @@ Existem skills populares que fazem o Claude criar e editar vídeo: as oficiais d
 
 ## Ordem sugerida para o roteirista
 P022 (carrossel, sem depender de teste) → P023 (bastidor, material já existe) → P020 e P021 só depois de um teste real de instalação.
+
+## Atualização P020 (2026-11-16): teste e fatos finais
+- **Teste real:** o dono do perfil instalou e usou o plugin/skill do Remotion antes desta data e confirmou que **funciona**. Isso valida o "Testado e aprovado".
+- **Comando:** `/remotion:remotion-create` + pedido. Exemplo oficial, texto exato: `/remotion:remotion-create Make a promo video for a record store`. Fonte: [Remotion: Claude Code plugin](https://www.remotion.dev/docs/ai/claude-code-plugin).
+- **Menus do app Claude desktop (texto oficial):** "Select Code, open Customize in the sidebar, then select Plugins → Discover" → buscar `remotion` → **"Add"** no plugin "Remotion" (remotion-dev/claude-code-plugin). Confirmação: "Remotion is installed and ready to use." Fonte: idem.
+- **Estrelas:** 7,3 mil (16/11/2026). Fonte: [remotion-dev/skills](https://github.com/remotion-dev/skills).
+- **Claude Code:** só a partir do Pro (Free = No); Pro custa US$ 20/mês, ou US$ 17/mês no anual. Fonte: [claude.com/pricing](https://claude.com/pricing).
+- **Node:** a documentação do plugin não lista requisitos e as páginas de requisitos do Remotion deram 404. **Decisão:** o roteiro não menciona Node (nem que precisa, nem que não precisa).
