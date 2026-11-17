@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>P020 motion</title>
+<link rel="stylesheet" href="kit.css">
+<style>
+.player{background:var(--gr);border:3px solid var(--gr);border-radius:36px;box-shadow:0 16px 0 #000;overflow:hidden}
+.player .scr{position:absolute;left:24px;right:24px;top:24px;bottom:110px;border-radius:20px;background:linear-gradient(135deg,#2F3BFF,#1a22b8);display:flex;align-items:center;justify-content:center}
+.player .tri{width:0;height:0;border-left:120px solid #fff;border-top:72px solid transparent;border-bottom:72px solid transparent;margin-left:22px}
+.player .bg{position:absolute;left:40px;right:40px;bottom:48px;height:16px;border-radius:9px;background:#3a3d44}
+.player .fg{position:absolute;left:0;top:0;bottom:0;border-radius:9px;background:var(--li)}
+.code{font:500 40px/1.5 "JB";color:#E9EAF0;white-space:pre}
+.code .t{color:#9AA6FF}.code .s{color:var(--li)}
+.lbl{font:700 30px "In";color:var(--ci);letter-spacing:.02em;text-transform:uppercase}
+.big{font:700 200px/0.9 "SG";letter-spacing:-.055em;text-align:center}
+.vin{border-radius:50%;background:repeating-radial-gradient(circle,#14161A 0 6px,#2a2d33 6px 8px);border:3px solid var(--gr);box-shadow:0 10px 0 #000}
+.vin::after{content:"";position:absolute;left:50%;top:50%;width:36%;height:36%;margin:-18% 0 0 -18%;border-radius:50%;background:var(--az);box-shadow:inset 0 0 0 12px var(--li)}
+.vin i{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;background:var(--off);border-radius:50%;z-index:2}
+.vin b{position:absolute;left:50%;top:6%;width:6px;height:30%;margin-left:-3px;background:rgba(255,255,255,.18);border-radius:3px}
+#s9{background:var(--az)}
+#s9 .w{color:#fff}
+.letter{display:inline-block}
+</style></head><body>
+<div id="stage">
+ <div id="grid"></div>
+ <div id="cam">
+
+  <!-- S1 gancho -->
+  <div class="scene" id="s1">
+   <div class="el" id="s1h" style="left:0;top:200px;width:1080px;text-align:center"><div class="big">+7 mil</div><div class="h1" style="margin-top:6px"><span class="mt">estrelas</span> ★</div></div>
+   <div class="el shot" id="s1shot" style="left:70px;top:610px;width:940px;height:740px"><div class="bar"><i></i><i></i><i></i><span>github.com/remotion-dev/skills</span></div><img src="cap/gh.png"><div class="el hl" id="s1hl" style="left:0;top:0"></div></div>
+   <div class="el" id="s1h2" style="left:0;top:270px;width:1080px"><div class="h1">Claude fazendo</div><div class="h1" style="margin-top:14px"><span class="mt">vídeo?</span></div></div>
+   <div class="el player" id="s1play" style="left:140px;top:610px;width:800px;height:640px"><div class="scr"><div class="tri"></div></div><div class="bg"><div class="fg" id="s1bar"></div></div></div>
+   <div class="el chip dk" id="s1c1" style="left:90px;top:560px">Claude</div>
+   <div class="el chip az" id="s1c2" style="left:640px;top:1180px">vídeo ▶</div>
+  </div>
+
+  <!-- S2 como funciona -->
+  <div class="scene" id="s2">
+   <div class="el card" id="s2a" style="left:80px;top:300px;width:920px;padding:34px 40px"><div class="lbl">Você descreve</div><div style="font:500 52px/1.25 'In';margin-top:12px">“Um vídeo promo pra minha loja”</div></div>
+   <div class="el card dark" id="s2b" style="left:60px;top:640px;width:960px;height:420px;padding:34px 40px"><div class="lbl" style="color:#9DA2AC">Claude escreve o código</div><div class="code" id="s2code" style="margin-top:18px"></div></div>
+   <div class="el chip az" id="s2r" style="left:600px;top:590px">Remotion</div>
+   <div class="el card" id="s2c" style="left:160px;top:1130px;width:760px;height:180px;padding:30px 40px"><div style="display:flex;align-items:center;gap:22px"><span class="mono" style="font-size:44px">video.mp4</span><span id="s2ok" style="font:700 46px 'SG';color:var(--az)"></span></div><div style="position:relative;height:22px;border-radius:12px;background:var(--ln);margin-top:26px;overflow:hidden"><div id="s2bar" style="position:absolute;left:0;top:0;bottom:0;background:var(--az)"></div></div></div>
+  </div>
+
+  <!-- S3 passo 1 -->
+  <div class="scene" id="s3">
+   <div class="el num" id="s3n" style="left:90px;top:300px">1</div>
+   <div class="el" id="s3t" style="left:280px;top:304px"><div style="font:700 66px/1.05 'SG';letter-spacing:-.03em">No app Claude</div><div style="font:500 50px 'In';color:var(--ci);margin-top:8px">do computador</div></div>
+   <div class="el chip" id="s3a" style="left:100px;top:640px">› Code</div>
+   <div class="el chip" id="s3b" style="left:230px;top:860px">› Customize</div>
+   <div class="el chip az" id="s3c" style="left:360px;top:1080px">› Plugins</div>
+   <div class="el ring" id="s3ring"></div><div class="el dot" id="s3dot"></div>
+  </div>
+
+  <!-- S4 passo 2 -->
+  <div class="scene" id="s4">
+   <div class="el num" id="s4n" style="left:90px;top:300px">2</div>
+   <div class="el chip" id="s4d" style="left:290px;top:322px">› Discover</div>
+   <div class="el card" id="s4s" style="left:80px;top:580px;width:920px;height:150px;display:flex;align-items:center;gap:26px;padding:0 40px"><svg width="56" height="56" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7" fill="none" stroke="#14161A" stroke-width="2.6"/><path d="M15 15l6 6" stroke="#14161A" stroke-width="2.6" stroke-linecap="round"/></svg><span id="s4q" style="font:500 60px 'In'"></span></div>
+   <div class="el card" id="s4r" style="left:80px;top:790px;width:920px;height:230px;padding:40px"><div style="font:700 68px 'SG';letter-spacing:-.03em">Remotion</div><div class="mono" style="font-size:34px;color:var(--ci);margin-top:10px">plugin · remotion-dev</div>
+    <div class="el chip" id="s4b" style="left:auto;right:36px;top:62px;font-size:52px;padding:14px 34px">Add</div></div>
+   <div class="el chip dk" id="s4ok" style="left:250px;top:1110px">Instalado ✓</div>
+   <div class="el ring" id="s4ring"></div><div class="el dot" id="s4dot"></div>
+  </div>
+
+  <!-- S5 passo 3 -->
+  <div class="scene" id="s5">
+   <div class="el num" id="s5n" style="left:90px;top:300px">3</div>
+   <div class="el" id="s5t" style="left:280px;top:304px"><div style="font:700 66px/1.05 'SG';letter-spacing:-.03em">Sessão nova</div><div style="font:500 50px 'In';color:var(--ci);margin-top:8px">na pasta do vídeo</div></div>
+   <div class="el card dark" id="s5term" style="left:60px;top:600px;width:960px;height:560px;padding:40px 44px">
+    <div class="lbl" style="color:#9DA2AC">Claude Code</div>
+    <div class="mono" style="font-size:48px;line-height:1.35;margin-top:30px;white-space:nowrap"><span style="color:var(--li)">›</span> <span id="s5cmd"></span></div>
+    <div class="mono el" id="s5desc" style="position:relative;display:inline-block;font-size:50px;margin-top:22px;background:var(--li);color:var(--gr);padding:6px 16px;border-radius:10px">[descreva o seu vídeo]</div>
+   </div>
+  </div>
+
+  <!-- S6 exemplo oficial -->
+  <div class="scene" id="s6">
+   <div class="el" id="s6h" style="left:0;top:270px;width:1080px"><div class="h1">Exemplo <span class="mt">oficial</span></div></div>
+   <div class="el shot" id="s6shot" style="left:50px;top:470px;width:980px;height:800px"><div class="bar"><i></i><i></i><i></i><span>remotion.dev/docs/ai/claude-code-plugin</span></div><img src="cap/plugin_ex.png"><div class="el hl" id="s6hl" style="left:0;top:0"></div></div>
+   <div class="el badge" id="s6tag" style="left:90px;top:1220px;font:500 30px 'JB'">exemplo da documentação oficial do Remotion</div>
+   <div class="el vin" id="s6v" style="left:760px;top:1030px;width:250px;height:250px"><b></b><i></i></div>
+  </div>
+
+  <!-- S7 veredito -->
+  <div class="scene" id="s7">
+   <div class="el" id="s7q" style="left:0;top:300px;width:1080px"><div class="big" style="font-size:170px">Funciona?</div></div>
+   <div class="el" id="s7s" style="left:150px;top:560px;width:780px;height:230px;border:10px solid var(--az);border-radius:30px;display:flex;align-items:center;justify-content:center;font:700 120px 'SG';color:var(--az);letter-spacing:-.04em;background:rgba(255,255,255,.7)">FUNCIONA ✓</div>
+   <div class="el card" id="s7w" style="left:80px;top:900px;width:920px;padding:40px 44px;border-color:var(--gr);background:#fff"><div style="display:flex;gap:22px;align-items:center"><span style="width:70px;height:70px;border-radius:50%;background:var(--co);color:#fff;font:700 52px 'SG';display:flex;align-items:center;justify-content:center">!</span><span style="font:700 64px 'SG';letter-spacing:-.03em">Mas exige</span></div><div style="font:700 74px 'SG';margin-top:20px;letter-spacing:-.03em">Claude Code</div><div style="font:500 50px 'In';color:var(--co);margin-top:10px" id="s7pro">plano Pro · US$ 20/mês</div></div>
+  </div>
+
+  <!-- S8 licença -->
+  <div class="scene" id="s8">
+   <div class="el" id="s8h" style="left:0;top:250px;width:1080px"><div class="h1">Remotion <span class="mt">grátis</span></div></div>
+   <div class="el shot" id="s8shot" style="left:60px;top:420px;width:960px;height:680px"><div class="bar"><i></i><i></i><i></i><span>remotion.dev/docs/license/pricing</span></div><img src="cap/pricing.png"><div class="el hl" id="s8hl" style="left:0;top:0"></div></div>
+   <div class="el" id="s8p" style="left:0;top:1150px;width:1080px;display:flex;justify-content:center;gap:30px;align-items:flex-end">
+    <svg class="el" id="s8p1" style="position:relative" width="140" height="190" viewBox="0 0 70 95"><circle cx="35" cy="20" r="17" fill="#14161A"/><path d="M4 95v-22a31 31 0 0 1 62 0v22z" fill="#14161A"/></svg>
+    <svg class="el" id="s8p2" style="position:relative" width="140" height="190" viewBox="0 0 70 95"><circle cx="35" cy="20" r="17" fill="#14161A"/><path d="M4 95v-22a31 31 0 0 1 62 0v22z" fill="#14161A"/></svg>
+    <svg class="el" id="s8p3" style="position:relative" width="140" height="190" viewBox="0 0 70 95"><circle cx="35" cy="20" r="17" fill="#2F3BFF"/><path d="M4 95v-22a31 31 0 0 1 62 0v22z" fill="#2F3BFF"/></svg>
+    <div class="el chip az" id="s8c" style="position:relative;margin-left:20px;margin-bottom:40px">até 3</div>
+   </div>
+  </div>
+
+  <!-- S9 CTA -->
+  <div class="scene" id="s9">
+   <div class="el" id="s9a" style="left:0;top:470px;width:1080px;text-align:center;font:500 110px 'SG';color:#fff;letter-spacing:-.03em">Comenta</div>
+   <div class="el" id="s9b" style="left:0;top:620px;width:1080px;text-align:center;font:700 250px/1 'SG';color:#fff;letter-spacing:-.05em"></div>
+   <div class="el" id="s9c" style="left:0;top:930px;width:1080px;text-align:center;font:500 60px/1.3 'In';color:#fff">que eu te mando o link</div>
+   <div class="el" id="s9d" style="left:0;top:1520px;width:1080px;text-align:center;font:500 32px 'JB';color:rgba(255,255,255,.75)">Fonte: github.com/remotion-dev/skills</div>
+  </div>
+
+  <!-- S10 bordão -->
+  <div class="scene" id="s10">
+   <div class="el" id="s10s" style="left:110px;top:700px;width:860px;height:300px;border:10px solid var(--az);border-radius:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 96px/1.05 'SG';color:var(--az);letter-spacing:-.04em;text-align:center">Testado e<br>aprovado.</div>
+   <img class="el" id="s10l" src="logo.png" style="left:160px;top:700px;width:760px">
+   <div class="el" id="s10t" style="left:0;top:1000px;width:1080px;text-align:center;font:500 64px 'SG';letter-spacing:-.02em">IA que funciona<span style="display:inline-block;width:.2em;height:.2em;background:var(--az);margin-left:.06em"></span></div>
+  </div>
+
+ </div>
+ <div id="top"><div class="el badge" id="badge" style="position:relative">Funciona ou Não?</div></div>
+ <div id="cap"></div>
+</div>
+<script src="kit.js"></script>
+<script>
+const {show,shot,typed,caret,prog,lerp,clamp,ease,css,$}=K;
+window.TOTAL=42.84;
+window.TEST_TIMES=[0,1.5,2.6,3.4,4.6,5.6,6.6,7.8,9.8,11.5,13.6,15.3,17.0,18.0,19.4,21.0,22.6,24.3,25.6,26.8,28.2,29.0,29.7,31.5,33.0,34.5,35.6,36.8,37.8,38.8,40.5,42.5];
+
+function hlAt(box,map,x0,y0,x1,y1){ const a=map(x0,y0),b=map(x1,y1); box.style.left=(a[0]-12)+'px'; box.style.top=(a[1]-12)+'px'; box.style.width=(b[0]-a[0]+24)+'px'; box.style.height=(b[1]-a[1]+24)+'px'; }
+// cursor quadrado azul (o “ponto” da marca): vai até cada alvo e clica
+function cursor(dot,ring,t,targets,start){
+ let px=start[0],py=start[1],click=-1;
+ for(const g of targets){ const el=$(g.id); const tx=el.offsetLeft+el.offsetWidth*(g.fx||.78)+(g.dx||0), ty=el.offsetTop+el.offsetHeight*(g.fy||.62)+(g.dy||0);
+  const q=ease.inOut(clamp((t-(g.t-.32))/.3)); px=lerp(px,tx,q); py=lerp(py,ty,q); if(t>=g.t&&t<g.t+.4) click=(t-g.t)/.4; }
+ const sq=click>=0&&click<.25?1-.25*Math.sin(click/.25*Math.PI):1;
+ css(dot,{x:px-23,y:py-23,s:sq,r:12,o:t>=targets[0].t-.6?1:0});
+ if(click>=0){ css(ring,{x:px-60,y:py-60,s:lerp(.3,1.3,click),o:1-click}); } else css(ring,{o:0});
+}
+
+K.SCENES=[
+{id:'s1',a:0,b:5.9,tilt:.6,render:(u)=>{
+  show($('#s1h'),u,{at:-.3,kind:'pop',out:3.75,outKind:'up'});
+  show($('#s1shot'),u,{at:-.3,kind:'up',r:-2,float:3,out:3.75,outKind:'left',outD:.3});
+  const m=shot($('#s1shot'),u,[{t:0,x:1040,y:130,w:230},{t:1.5,x:1020,y:118,w:260},{t:2.2,x:0,y:0,w:1280},{t:3.8,x:30,y:40,w:1180}]);
+  const h=$('#s1hl'); if(u<1.7||(u>=2.9&&u<3.8)){ h.style.display='block'; if(u<1.7) hlAt(h,m,1158,190,1246,214); else hlAt(h,m,975,418,1062,442); } else h.style.display='none';
+  show($('#s1h2'),u,{at:3.95,kind:'drop'});
+  show($('#s1play'),u,{at:3.92,kind:'pop',float:4});
+  $('#s1bar').style.width=(clamp((u-4.1)/1.6)*100)+'%';
+  show($('#s1c1'),u,{at:4.46,kind:'pop',r:-7,float:5});
+  show($('#s1c2'),u,{at:5.30,kind:'pop',r:6,float:5});
+}},
+{id:'s2',a:5.9,b:10.3,render:(u,t)=>{
+  show($('#s2a'),t,{at:6.16,kind:'left',r:-1.5,float:3});
+  show($('#s2b'),t,{at:7.0,kind:'up',r:1,float:2});
+  const code='<<span class="t">Composition</span>\n  id=<span class="s">"Promo"</span>\n  fps={30}\n  durationInFrames={300} />';
+  const plain=code.replace(/<span class="\w">|<\/span>/g,''); const n=Math.floor(plain.length*clamp((t-7.2)/1.1));
+  // digita mantendo as cores: conta só os caracteres visíveis
+  let out='',c=0,i=0; while(i<code.length&&c<n){ if(code.startsWith('<span',i)){const j=code.indexOf('>',i);out+=code.slice(i,j+1);i=j+1;continue;} if(code.startsWith('</span>',i)){out+='</span>';i+=7;continue;} out+=code[i]==='<'?'&lt;':code[i]==='>'?'&gt;':code[i]; i++; c++; }
+  if((out.match(/<span/g)||[]).length>(out.match(/<\/span>/g)||[]).length) out+='</span>';
+  $('#s2code').innerHTML=out+caret(t,7.2,8.3);
+  show($('#s2r'),t,{at:8.32,kind:'stamp',r:-6});
+  show($('#s2c'),t,{at:9.15,kind:'up',float:2});
+  $('#s2bar').style.width=(clamp((t-9.32)/.75)*100)+'%';
+  $('#s2ok').textContent=t>=10.1?'✓ pronto':'';
+}},
+{id:'s3',a:10.3,b:15.9,tilt:-.5,render:(u,t)=>{
+  show($('#s3n'),t,{at:10.5,kind:'stamp',r:-4});
+  show($('#s3t'),t,{at:11.26,kind:'right'});
+  show($('#s3a'),t,{at:13.3,kind:'pop',r:-3,float:3});
+  show($('#s3b'),t,{at:13.98,kind:'pop',r:2,float:3});
+  show($('#s3c'),t,{at:14.85,kind:'pop',r:-2,float:3});
+  cursor($('#s3dot'),$('#s3ring'),t,[{id:'#s3a',t:13.5},{id:'#s3b',t:14.2},{id:'#s3c',t:15.1}],[900,1300]);
+}},
+{id:'s4',a:15.9,b:19.8,render:(u,t)=>{
+  show($('#s4n'),t,{at:16.05,kind:'stamp',r:4});
+  show($('#s4d'),t,{at:16.94,kind:'pop',r:-2,float:2});
+  show($('#s4s'),t,{at:17.3,kind:'up'});
+  $('#s4q').innerHTML=typed('remotion',t,17.58,18.25)+caret(t,17.4,18.25);
+  show($('#s4r'),t,{at:18.35,kind:'up',float:2});
+  const ok=t>=19.12; const b=$('#s4b'); b.className='el chip'+(ok?' az':''); b.textContent=ok?'✓':'Add';
+  show(b,t,{at:18.35,kind:'fade',s:ok?1+.25*Math.exp(-(t-19.12)*8):1});
+  show($('#s4ok'),t,{at:19.3,kind:'drop',r:-3});
+  cursor($('#s4dot'),$('#s4ring'),t,[{id:'#s4r',t:19.1,fx:.86,fy:.5}],[700,1400]);
+}},
+{id:'s5',a:19.8,b:25.3,tr:'zoom',tilt:.5,render:(u,t)=>{
+  show($('#s5n'),t,{at:20.0,kind:'stamp',r:-4});
+  show($('#s5t'),t,{at:20.75,kind:'right'});
+  show($('#s5term'),t,{at:21.35,kind:'up',r:-1,float:2});
+  $('#s5cmd').innerHTML=typed('/remotion:remotion-create',t,22.0,23.4)+caret(t,21.6,23.9);
+  show($('#s5desc'),t,{at:23.98,kind:'pop',r:-2});
+}},
+{id:'s6',a:25.3,b:28.9,tr:'up',render:(u,t)=>{
+  show($('#s6h'),t,{at:25.4,kind:'drop'});
+  show($('#s6shot'),t,{at:25.3,kind:'fade',r:1.5,float:2});
+  const m=shot($('#s6shot'),t,[{t:25.3,x:280,y:40,w:900},{t:26.2,x:290,y:120,w:860},{t:26.9,x:300,y:380,w:740}]);
+  const h=$('#s6hl'); if(t>=26.6){h.style.display='block';hlAt(h,m,318,616,1018,672);} else h.style.display='none';
+  show($('#s6tag'),t,{at:25.9,kind:'left',r:-2});
+  show($('#s6v'),t,{at:27.64,kind:'pop',r:(t-27.64)*260});
+}},
+{id:'s7',a:28.9,b:32.2,tr:'zoom',render:(u,t)=>{
+  show($('#s7q'),t,{at:28.95,kind:'pop'});
+  show($('#s7s'),t,{at:29.46,kind:'stamp',r:-6});
+  show($('#s7w'),t,{at:30.1,kind:'right',r:1.5,float:3});
+  $('#s7pro').style.transform=`scale(${1+.12*Math.exp(-Math.max(0,t-31.82)*6)*(t>=31.82?1:0)})`; $('#s7pro').style.transformOrigin='left center';
+}},
+{id:'s8',a:32.2,b:36.1,tr:'up',render:(u,t)=>{
+  show($('#s8h'),t,{at:32.42,kind:'drop'});
+  show($('#s8shot'),t,{at:32.2,kind:'fade',r:-1.5,float:2});
+  const m=shot($('#s8shot'),t,[{t:32.2,x:290,y:110,w:780},{t:33.6,x:300,y:150,w:740},{t:34.3,x:300,y:150,w:580}]);
+  const h=$('#s8hl'); if(t>=34.25){h.style.display='block';hlAt(h,m,336,298,842,326);} else h.style.display='none';
+  show($('#s8p1'),t,{at:34.66,kind:'drop'}); show($('#s8p2'),t,{at:34.8,kind:'drop'}); show($('#s8p3'),t,{at:34.96,kind:'drop'});
+  show($('#s8c'),t,{at:35.15,kind:'pop',r:-5,float:3});
+}},
+{id:'s9',a:36.1,b:38.3,tr:'zoom',render:(u,t)=>{
+  show($('#s9a'),t,{at:36.2,kind:'pop'});
+  $('#s9b').innerHTML='VÍDEO'.split('').map((c,i)=>{const p=clamp((t-36.5-i*.05)/.3);return `<span class="letter" style="opacity:${p>0?1:0};transform:translateY(${lerp(-220,0,ease.back(p))}px) rotate(${lerp(-20,0,p)}deg)">${c}</span>`}).join('');
+  show($('#s9c'),t,{at:36.86,kind:'up'});
+  show($('#s9d'),t,{at:37.1,kind:'fade'});
+}},
+{id:'s10',a:38.3,b:42.84,render:(u,t)=>{
+  show($('#s10s'),t,{at:38.44,kind:'stamp',r:-4,out:39.65,outKind:'pop'});
+  show($('#s10l'),t,{at:39.85,kind:'pop'});
+  show($('#s10t'),t,{at:40.8,kind:'up'});
+}},
+];
+K.CAM={punch:[{t:2.94,a:.06},{t:9.32,a:.05},{t:13.42,a:.03},{t:14.10,a:.03},{t:15.0,a:.04},{t:19.12,a:.05},{t:22.02,a:.04},{t:31.82,a:.04},{t:33.22,a:.05},{t:34.96,a:.05}],
+ shake:[{t:10.5,a:8},{t:16.05,a:8},{t:20.0,a:8},{t:29.46,a:18},{t:38.44,a:14}]};
+K.CUES=[
+ {t:0,n:'pop',v:.5},{t:2.94,n:'ding',v:.35},{t:3.92,n:'pop',v:.45},{t:4.46,n:'pop',v:.4},{t:5.30,n:'pop',v:.45},
+ {t:6.16,n:'pop',v:.35},{t:7.2,n:'type',v:.3},{t:8.32,n:'stamp',v:.35},{t:9.15,n:'pop',v:.35},{t:10.1,n:'ding',v:.4},
+ {t:10.5,n:'stamp',v:.4},{t:11.26,n:'pop',v:.3},{t:13.5,n:'click',v:.6},{t:14.2,n:'click',v:.6},{t:15.1,n:'click',v:.6},
+ {t:16.05,n:'stamp',v:.4},{t:16.94,n:'pop',v:.35},{t:17.58,n:'type',v:.3},{t:18.35,n:'pop',v:.35},{t:19.1,n:'click',v:.6},{t:19.3,n:'ding',v:.4},
+ {t:20.0,n:'stamp',v:.4},{t:20.75,n:'pop',v:.3},{t:22.0,n:'type',v:.3},{t:23.98,n:'pop',v:.4},
+ {t:25.9,n:'pop',v:.3},{t:27.64,n:'pop',v:.4},
+ {t:28.95,n:'pop',v:.4},{t:29.46,n:'stamp',v:.6},{t:30.1,n:'pop',v:.35},
+ {t:34.25,n:'click',v:.4},{t:34.66,n:'pop',v:.35},{t:34.8,n:'pop',v:.35},{t:34.96,n:'pop',v:.35},{t:35.15,n:'ding',v:.4},
+ {t:36.2,n:'pop',v:.45},{t:36.5,n:'stamp',v:.35},{t:38.44,n:'stamp',v:.55},{t:39.85,n:'ding',v:.45},
+];
+K.HIDECAP=t=>t>=36.1;
+const _frame=K.frame;
+K.boot({stt:'stt.json',images:['cap/gh.png','cap/plugin_ex.png','cap/pricing.png','logo.png'],
+ kw:['github','estrelas','vídeo','remotion','renderiza','plugins','add','/remotion:remotion-create','discos','funciona','pro','grátis','três','pessoas'],
+ troca:{'/remotion':'/remotion:remotion-create','"vídeo"':'VÍDEO','7':'7'},pula:['create']}).then(()=>{
+  const r=window.render; window.render=t=>{ r(t); show($('#badge'),t,{at:-.2,kind:'pop',out:36.0,outKind:'up'}); };
+});
+</script></body></html>

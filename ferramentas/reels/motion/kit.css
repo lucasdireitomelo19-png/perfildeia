@@ -1,0 +1,43 @@
+/* IA Works · kit de motion para Reels (1080×1920). Tokens da marca + componentes. */
+@font-face{font-family:"SG";font-weight:500;src:url(fontes/space-grotesk-latin-500-normal.woff2)}
+@font-face{font-family:"SG";font-weight:700;src:url(fontes/space-grotesk-latin-700-normal.woff2)}
+@font-face{font-family:"In";font-weight:400;src:url(fontes/inter-latin-400-normal.woff2)}
+@font-face{font-family:"In";font-weight:500;src:url(fontes/inter-latin-500-normal.woff2)}
+@font-face{font-family:"In";font-weight:700;src:url(fontes/inter-latin-700-normal.woff2)}
+@font-face{font-family:"JB";font-weight:500;src:url(fontes/jetbrains-mono-latin-500-normal.woff2)}
+:root{--off:#F7F6F2;--br:#FFFFFF;--gr:#14161A;--az:#2F3BFF;--li:#D4F542;--ci:#6B7079;--co:#FF5A4E;--ln:#E4E2DC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--off)}
+#stage{position:absolute;inset:0;overflow:hidden;background:var(--off);color:var(--gr);font-family:"In"}
+/* fundo quadriculado que “anda” devagar */
+#grid{position:absolute;inset:-120px;background-image:linear-gradient(rgba(20,22,26,.055) 2px,transparent 2px),linear-gradient(90deg,rgba(20,22,26,.055) 2px,transparent 2px);background-size:60px 60px}
+#cam{position:absolute;inset:0;transform-origin:540px 860px}
+.scene{position:absolute;inset:0;display:none}
+.el{position:absolute;will-change:transform}
+/* componentes */
+.card{background:var(--br);border:3px solid var(--gr);border-radius:34px;box-shadow:0 14px 0 var(--gr)}
+.card.dark{background:var(--gr);color:#fff}
+.shot{overflow:hidden;background:#fff;border:3px solid var(--gr);border-radius:30px;box-shadow:0 16px 0 var(--gr)}
+.shot img{position:absolute;left:0;top:0;transform-origin:0 0}
+.shot .bar{position:absolute;left:0;right:0;top:0;height:58px;background:#fff;border-bottom:3px solid var(--gr);display:flex;align-items:center;gap:12px;padding-left:24px;z-index:2}
+.shot .bar i{width:16px;height:16px;border-radius:50%;border:3px solid var(--gr);display:block}
+.shot .bar span{margin-left:14px;font:500 24px "JB";color:var(--ci)}
+.chip{display:inline-flex;align-items:center;gap:18px;background:var(--br);border:3px solid var(--gr);border-radius:999px;padding:18px 38px;font:700 58px "SG";letter-spacing:-.02em;box-shadow:0 8px 0 var(--gr);white-space:nowrap}
+.chip.az{background:var(--az);color:#fff;border-color:var(--gr)}
+.chip.co{background:var(--co);color:#fff}
+.chip.dk{background:var(--gr);color:#fff}
+.badge{display:inline-block;background:var(--gr);color:#fff;font:700 30px "SG";border-radius:999px;padding:12px 28px;letter-spacing:-.01em}
+.h1{font:700 104px/1 "SG";letter-spacing:-.045em;text-align:center;white-space:nowrap}
+.h2{font:700 76px/1.05 "SG";letter-spacing:-.035em;text-align:center}
+.mt{background:linear-gradient(transparent 52%,var(--li) 52%,var(--li) 94%,transparent 94%);padding:0 .08em}
+.num{width:150px;height:150px;background:var(--az);color:#fff;border:3px solid var(--gr);border-radius:30px;box-shadow:0 10px 0 var(--gr);display:flex;align-items:center;justify-content:center;font:700 110px "SG"}
+.mono{font-family:"JB";font-weight:500}
+.dot{width:46px;height:46px;background:var(--az);border:3px solid #fff;box-shadow:0 0 0 3px var(--gr);border-radius:6px}
+.ring{width:120px;height:120px;border:8px solid var(--az);border-radius:50%}
+.hl{border:8px solid var(--az);border-radius:16px;background:rgba(47,59,255,.06)}
+/* legenda em faixa */
+#cap{position:absolute;left:0;right:0;top:1452px;height:150px;display:flex;justify-content:center;align-items:center;z-index:50;pointer-events:none}
+#cap .band{display:flex;gap:16px;align-items:center;background:#fff;border:3px solid var(--gr);border-radius:22px;padding:16px 30px;box-shadow:0 8px 0 var(--gr);transform:rotate(-2deg);font:700 60px/1.1 "In";letter-spacing:-.015em;white-space:nowrap}
+#cap .w{display:inline-block}
+#cap .w.k{background:var(--az);color:#fff;border-radius:12px;padding:2px 14px}
+#top{position:absolute;left:0;right:0;top:120px;display:flex;justify-content:center;z-index:50}
