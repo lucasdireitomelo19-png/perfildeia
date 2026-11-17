@@ -29,3 +29,8 @@ Pilar: `tutorial` · `prompt` · `descoberta` · `bastidor` · `venda`
 | P021 | ffmpeg-skill: 6 mil estrelas, Claude vira editor de vídeo | reels | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
 | P022 | 3 skills que ensinam o Claude a editar vídeo (e qual serve pra você) | carrossel | descoberta | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
 | P023 | Bastidor: os Reels deste perfil são editados pelo Claude | reels | bastidor | 🔎 pesquisado | producao/01-pesquisas/2026-11-16-skills-video-claude.md | |
+| P024 | Funciona ou Não? O Instagram traduz seu Reels pra espanhol/inglês sozinho (e com voz de IA?) | reels | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-17-modelos-de-reels-que-funcionam.md | |
+| P025 | Prompt que Funciona: "melhore esse texto" x o prompt certo pra legenda de post | reels | prompt | 🔎 pesquisado | producao/01-pesquisas/2026-11-17-modelos-de-reels-que-funcionam.md | |
+| P026 | Legenda automática no vídeo com o Edits, o app grátis do Instagram (3 passos) | reels | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-17-modelos-de-reels-que-funcionam.md | |
+| P027 | Antes/depois: e-mail de cobrança grosso vira educado (e firme) com 1 prompt | reels | prompt | 🔎 pesquisado | producao/01-pesquisas/2026-11-17-modelos-de-reels-que-funcionam.md | |
+| P028 | Me dá 15 segundos: fórmula de planilha sem saber fórmula | reels | tutorial | 🔎 pesquisado | producao/01-pesquisas/2026-11-17-modelos-de-reels-que-funcionam.md | |
